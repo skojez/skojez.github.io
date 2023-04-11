@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+html,body
+{
+    width: 100vw;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.fa-searchengin{
+    display:none;
+}
+
+.site-header{
+    background-color: lightgray;
+    font-weight: 600;
+}
+.site-header  ul li a{
+    display : block;
+    color:black;
+    text-decoration: none;
+}
+.navbar{
+    background-color: white;
+}
+
+.footer{
+    background-color: #010081;
+}
+
+.sosmed a{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    display: inline-flex;
+    align-items: center;
+    color: #eee;
+    text-decoration: none;
+}
+  
+.contain {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+}
+  
+.item {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: auto;
+    justify-content: center;
+}
+  
+.section-divider {
+    border-top: 2px solid black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+  
+.section-divider > span {
+    color: black;
+    font-weight: bold;
+    background: white;
+    display: inline-block;
+    position: relative;
+    padding: 0 17px;
+    top: -25px;
+    font-size: 30px;
+}
+  
+.main-news img{
+    height: auto;
+    width: 600px;
+}
+
+.text-news h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+    margin: 2px 5px;
+}
+
+.text-news{
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+
+.text-news h5{
+    font-size: 15px;
+    color: gray;
+    text-align: start;
+    margin: 2px 5px 10px;
+}
+
+.text-news p{
+    width: auto;
+    font-size: 15px;
+    text-align: justify;
+    padding: 0 5px;
+}
+
+.text-news button{
+    color: white;
+    background-color: #010081;
+    border: none;
+    width: 120px;
+    height: 30px;
+}
+
+.text-news h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+    margin: 2px 5px;
+}
+
+.text-news2{
+    margin-left: 50px;
+    padding-top: 40px;
+}
+
+.text-news2 h5{
+    font-size: 15px;
+    color: gray;
+    text-align: start;
+    margin: 2px 5px 10px;
+}
+
+.text-news2 p{
+    width: auto;
+    font-size: 15px;
+    text-align: justify;
+    padding: 0 5px;
+}
+
+.text-news2 button{
+    color: white;
+    background-color: #010081;
+    border: none;
+    width: 120px;
+    height: 30px;
+}
+.text-news2 h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+    margin: 2px 5px;
+}
+
+.main-event img{
+    height: auto;
+    width: 250px;
+}
+
+.text-event h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    margin: 8px 5px;
+}
+
+.text-event h5{
+    font-size: 10px;
+    color: gray;
+    text-align: start;
+    margin: -5px 5px 15px;
+}
+
+.text-event p{
+    width: auto;
+    font-size: 15px;
+    text-align: justify;
+    padding: 0 5px;
+}
+
+.text-event button{
+    color: white;
+    background-color: #010081;
+    border: none;
+    width: 120px;
+    height: 30px;
+}
+
+.main-mitra img{
+    width: auto;
+    height: auto;
+    margin: 40px -20px;
+}
+.site-header{
+    width: 100%;
+    flex: 1;
+    height: 6vh;
+    white-space: nowrap;
+    transition: 1s;
+    
+}
+.site-header ul li{
+    position: relative;
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.site-header ul li:last-child{
+    position: relative;
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.container{
+    max-width: 100%;
+}
+
+.site-header ul li a{
+    width: 18.2%;
+}
+.site-header .rusuh{
+    width: 0;
+}
+
+.fa-bars{
+  display:none;
+}
+.site-header .fa-xmark{
+    display:none;
+}
+.search-bar{
+   width: 350px;
+   position: relative;
+}
+
+.site-header img{
+    margin-left: 12px;
+    margin-top:60px;
+    display: none;
+}
+.drop{
+    display: none;
+}
+
+.show {
+    display:inline;
+}
+.text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+ }
+.input, select, textarea{
+    color: #f8f4f4;
+}
+
+textarea:focus, .input:focus {
+    color: #f9f2f2;
+}
+.footer img{
+    margin-left: -20px;
+    margin-top: 40px;
+}
+.footer hr{
+    width: 100%;
+    background-color: #7c4dff;
+    height: 2px
+}
+.mapouter{
+    position:relative; text-align:right; height:250px; width:auto; display: flex;
+}
+.input::placeholder{
+    color: white;
+    opacity: 1;
+}
+.footer{
+    padding-top:5px;
+    overflow-y: hidden;
+}
+.gmap_canvas{
+    overflow:hidden; background:none!important; height:250px; width:auto;display:flex;
+}
+.arrowKegiatan{
+    display: flex;
+    justify-content: center;
+    color: #010081;
+}
+.arrowKegiatan a:hover, a:focus, a:active, a:visited, a:link{
+    text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+    .navigasi{
+        box-shadow: 0px 5px  5px rgba(0, 0, 0, 0.19);
+    }
+    .item img{
+        min-height: 200px;
+        width: 100%;
+        margin-left:-0.2%;
+    }
+    .main-news{
+        margin-top:-100px;
+    }
+    .contain{
+        margin: 0px 0 100px 0 ;
+        
+    }
+    .owl-dots{
+        margin-top:0;
+    }
+    .site-header ul li {
+        display : block;
+        
+    }
+    .site-header ul li a{
+        text-decoration: underline;
+        color: white;
+
+    }
+    .text-news{
+        margin-left:-10px;
+        padding-bottom: 20px;
+        margin-right: 10px;
+    }
+    .text-news2{
+        margin-left:-10px;
+        padding-bottom: 20px;
+        margin-right: 10px;
+    }
+    .site-header{
+        position: absolute;
+        background: #010081;
+        height :auto;
+        width: 200px;
+        top: 0;
+        right: -400px;
+        text-align: left;
+        z-index: 2;
+        border-radius: 0px 0px 0px 50px;
+    }
+    .site-header img{
+        padding-bottom: 20px;
+    }
+    .site-header .fa-solid{
+        display:block;
+        color: white;
+        margin: 10px;
+        font-size:20px;
+        cursor: pointer;
+    }
+    .site-header ul{
+        padding-top:30px;
+    }
+    .site-header img{
+        margin-left: 12px;
+        margin-top:60px;
+        display: block;
+    }
+    .fa-bars{
+        display: block;
+        position:absolute;
+        top: 30px;
+        right: 20px;
+        font-size: 25px;
+        cursor: pointer;
+      }
+    .form-control{
+        display: none;
+    }
+    .fa-searchengin{
+        display: block;
+        position:absolute;
+        top: 30px;
+        right: 60px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .drop{
+        position: relative;
+        display: none;
+        font-size: 12px;
+        width: 200px;
+        height: auto;
+        margin-top: -35px;
+        margin-left: -20px;
+        cursor: pointer;
+    }
+    .show {
+        display:block;
+        
+    }
+    .test{
+        transition: 1s;
+    }
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .sosmed{
+        margin-left:20px;
+    }
+    .footer img{
+        margin-left:2px
+    }
+    .gmap_canvas{
+        height:250px;
+        width:auto;
+        display:flex;
+    }
+    .footer hr{
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 801px) {
+    .drop
+    {
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 23vh;
+        border-radius: 10px 10px 10px 10px;
+        padding-top: 10px;
+        background-color: #010081;
+        font-size: medium;
+        text-align: left;
+        top : 35px;
+        left: -32px;
+    }
+    .drop ul li a{
+        font-size: 16px;
+        color: white;
+        text-decoration: underline;
+        padding-bottom: 5px;
+    }
+    .show {
+        display:block;
+        
+    }
+    .test{
+        transition: 1s;
+    }
+    
+}

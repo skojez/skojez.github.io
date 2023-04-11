@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/Style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+</head>
+
+<body class="d-flex flex-column"> 
+  <div id="top"></div>
+  <div class="navigasi sticky-top">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" style="font-weight: bold; font-size: 20px;">
+              <img src="Asset/Images/Gambar Logo Unri.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top">
+            </a>
+            <form class="search-bar d-flex" role="search">
+              <input class="input form-control me-2" type="search" placeholder="Pencarian..." aria-label="Search" style="width: 90%; height: 40px;border-radius: 100px; background-color: rgba(0, 0, 141, 0.8); box-shadow: 0 10px 10px rgba(0, 0, 141, 0.2); padding-left: 50px; white-space:nowrap">
+              <button class="btn" type="submit" style="position: absolute; border: none; color: white; margin: 2px 5px;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+    </nav>
+
+    <nav class="site-header shadow mb-5" style="color: black; content: none;" id="myNavbar">
+        <div class="container" >
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a class="py-2 d-flex d-md-inline-block" href="#">Beranda</a></li>
+            <li><a id="dropbtn" class="test py-2 d-flex d-md-inline-block nav-link" href="#" onclick="fungsiDropdown()">Profil V</a>
+              <div class="drop" id="dropdown">
+                <ul>
+                  <li><a href="#" >Sejarah</a></li>
+                  <li><a href="#" >Visi dan Misi</a></li>
+                  <li><a href="#" >Tujuan dan Sasaran</a></li>
+                  <li><a href="#" >Strategi</a></li>
+                  <li><a href="#" >Struktur Organisasi</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="py-2 d-flex d-md-inline-block" href="#">Sertifikasi</a></li>
+            <li><a class="py-2 d-flex d-md-inline-block" href="#" >Akademik</a></li>
+            <li><a class="py-2 d-flex d-md-inline-block" href="#" >Media</a></li>
+            <li><a class="rusuh py-2 d-flex d-md-inline-block" href="#" >Kontak</a></li>
+          </ul>
+        <img src="Asset/Icon/mobileikon.png" alt="logo">
+        </div>  
+    </nav>
+    <i class="fa-solid fa-bars" onclick = "showMenu()"></i>
+    <i class="fa-brands fa-searchengin"></i>
+  </div>
+  
+  <div class="contain">
+    <div id="owl-carousel" class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="Asset/Images/Banner.jpg" alt="Banner">
+      </div>
+      <div class="item">
+        <img src="Asset/Images/banner-2.jpg" alt="Banner">
+      </div>
+      <div class="item">
+        <img src="Asset/Images/banner-3.jpg" alt="Banner">
+      </div>
+      <div class="item">
+        <img src="Asset/Images/banner-4.jpg" alt="Banner">
+      </div>
+      <div class="item">
+        <img src="Asset/Images/banner-5.png" alt="Banner">
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS code after importing jquery and owl -->
+    <script type="text/javascript">
+  </script>
+  
+  <a class ="upIcon"href="#top">
+    <i class="fa-solid fa-circle-arrow-up" style="color:black;position:fixed;z-index:999;right:30px;bottom:30px;font-size:30px;"></i>
+  </a>
+  <section class="main-news">
+    <div class="container">
+      <div class="section-divider">
+        <span>BERITA</span>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-6 col-sm-12 p-2">
+              <img src="Asset/Images/Berita.jpg" class="img-fluid" alt="Berita1">
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <div class="container" >
+                <div class="text-news wrapper">
+                  <h1>Ani Mardhatillah</h1>
+                  <h5>12 Oct 2022</h5>
+                  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
+                  <div class="d-grid" style="padding: 0 5px;">
+                    <button type="button">Read More ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" style="display: flex; flex-wrap: wrap-reverse;">
+            <div class="col-xl-6 col-sm-12">
+              <div class="container" >
+                <div class="text-news2 wrapper">
+                  <h1>Ani Mardhatillah</h1>
+                  <h5>12 Oct 2022</h5>
+                  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
+                  <div class="d-grid" style="padding: 0 5px;">
+                    <button type="button">Read More ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 p-2">
+              <img src="Asset/Images/Berita2.jpg" class="img-fluid" alt="Berita1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-event">
+    <div class="container">
+      <div class="section-divider">
+        <span>KEGIATAN</span>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-xl-3 p-2">
+              <img src="Asset/Images/EVENT 1.jpg" class="img-fluid" alt="Berita1">
+            </div>
+            <div class="col-6 col-sm-6 col-xl-3">
+              <div class="text-event">
+                <h1>Ani Mardhatillah</h1>
+                <h5>12 Oct 2022</h5>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
+                <div class="d-grid" style="padding: 0 5px;">
+                  <button type="button">Read More ></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-xl-3 p-2">
+              <img src="Asset/Images/EVENT 2.jpg" class="img-fluid" alt="Berita1">
+            </div>
+            <div class="col-6 col-sm-6 col-xl-3">
+              <div class="text-event">
+                <h1>Ani Mardhatillah</h1>
+                <h5>12 Oct 2022</h5>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
+                <div class="d-grid" style="padding: 0 5px;">
+                  <button type="button">Read More ></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-xl-3 p-2">
+              <img src="Asset/Images/EVENT 3.jpg" class="img-fluid" alt="Berita1" style="padding-top: 30px;">
+            </div>
+            <div class="col-6 col-sm-6 col-xl-3">
+              <div class="text-event" style="padding-top: 30px;">
+                <h1>Ani Mardhatillah</h1>
+                <h5>12 Oct 2022</h5>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
+                <div class="d-grid" style="padding: 0 5px;">
+                  <button type="button">Read More ></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-xl-3 p-2">
+              <img src="Asset/Images/EVENT 4.jpeg" class="img-fluid" alt="Berita1" style="padding-top: 30px;">
+            </div>
+            <div class="col-6 col-sm-6 col-xl-3">
+              <div class="text-event" style="padding-top: 30px;">
+                <h1>Ani Mardhatillah</h1>
+                <h5>12 Oct 2022</h5>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
+                <div class="d-grid" style="padding: 0 5px;">
+                  <button type="button">Read More ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="" class="arrowKegiatan"><i class="fa-solid fa-circle-arrow-down" style="font-size: 40px;"></i></a>
+    </div>
+  </section>
+
+  <section class="main-mitra">
+    <div class="container">
+      <div class="section-divider">
+        <span>KEMITRAAN</span>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-3 p-2">
+              <img src="Asset/Images/logo-bps-1.jpg" alt="Berita1" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-3 p-2">
+              <img src="Asset/Images/logo-cisco.jpg" alt="Berita1" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-3 p-2">
+              <img src="Asset/Images/logo-esri-1.jpg" alt="Berita1" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-3 p-2">
+              <img src="Asset/Images/logo-redhat-1.jpg" alt="Berita1" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-3 p-2">
+              <img src="Asset/Images/logo-microsoft.jpg" alt="Berita1" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-3 p-2">
+              <img src="Asset/Images/logo-mikrotik.jpg" alt="Berita1" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-3 p-2">
+              <img src="Asset/Images/logo-oracle.jpg" alt="Berita1" class="img-fluid">
+            </div>
+            <div class="col-xl-3 col-3 p-2">
+              <img src="Asset/Images/logo-kemenkominfo.jpg" alt="Berita1" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #010081; margin-top:auto"
+            >
+      <!-- Section: Social media -->
+     
+       
+       
+        <!-- Left -->
+  
+        
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links  -->
+      <section class="footer">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="justify-content-center align-content-center align-items-center col-sm-12 col-md-3 col-lg-4 col-xl-3 mx-auto mb-5">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold" style="text-align:center">Denah Lokasi</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block"
+                  />
+              <div class="mapouter" style="justify-content: center;">
+                <div class="gmap_canvas">
+                  <iframe width="auto" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=unri&t=&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>  
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Link Terkait</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <a href="#!" class="text-white">Beasiswa</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Konferensi Internasional</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Tracer Study</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="footer2 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Sosial Media</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <div class="wrapper">
+                <div class="sosmed">
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+              <img src="Asset/Icon/logo akreditasi.png" alt="">
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <a class="text-white" style="text-decoration: none;" href="">&copy; Copyright All Rights Reserved</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  
+  <!-- End of .container -->
+    <script src="Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Script/script.js"></script>
+</body>
+</html>
