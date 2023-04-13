@@ -11,8 +11,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    padding-top: 90px;
-    /* overflow-x: hidden;  */
+    overflow-x: hidden; 
 }
 
 .fa-searchengin{
@@ -30,7 +29,6 @@ html,body
 }
 .navbar{
     background-color: white;
-    
 }
 
 .footer{
@@ -300,9 +298,6 @@ textarea:focus, .input:focus {
     text-decoration: none;
 }
 @media screen and (max-width: 800px) {
-    html,body{
-        padding-top: 43px;
-    }
     .navigasi{
         box-shadow: 0px 5px  5px rgba(0, 0, 0, 0.19);
     }
