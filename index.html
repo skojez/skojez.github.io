@@ -88,7 +88,7 @@
   </script>
   
   <a class ="upIcon" id="myBtn" href="#">
-    <i class="fa-solid fa-circle-arrow-up" style="color:black;position:fixed;z-index:999;right:30px;bottom:30px;font-size:30px;"></i>
+    <i class="fa-solid fa-circle-arrow-up" ></i>
   </a>
 
   <script>
@@ -98,7 +98,7 @@
     window.onscroll = function() {scrollFunction()};
     
     function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         mybutton.style.display = "block";
       } else {
         mybutton.style.display = "none";
