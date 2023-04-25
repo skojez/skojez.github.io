@@ -17,12 +17,25 @@
 // Navbar
 var navbar = document.getElementById("myNavbar");
 function showMenu(){
-  navbar.style.right = "0";
+  navbar.style.display = "block";
+
 }
 function hideMenu(){
-  navbar.style.right = "-400px";
+  if($(window).width() <= 800){
+    navbar.style.display = "none";
+  }
 }
-    
+
+$(window).on('resize', function() {
+  if (window.innerWidth > 800) {
+     navbar.style.display = "block";
+  }else{
+    navbar.style.display = "none"
+  }
+});
+
+
+
 function fungsiDropdown() {
   document.getElementById("dropdown").classList.toggle("show");
 }
