@@ -40,7 +40,11 @@ function fungsiDropdown() {
   document.getElementById("dropdown").classList.toggle("show");
 }
 
-window.onclick = function(event) {
+function fungsiDropdown2(){
+  document.getElementById("dropdown2").classList.toggle("show2");
+}
+
+window.addEventListener('click', function(event){
   if (!event.target.matches('.test')) {
     var dropdowns = document.getElementsByClassName("drop");
     var i;
@@ -51,7 +55,18 @@ window.onclick = function(event) {
             }
         }
     }
-}
+    if (!event.target.matches('.test2')) {
+      var dropdowns = document.getElementsByClassName("drop2");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show2')) {
+                  openDropdown.classList.remove('show2');
+              }
+          }
+      }
+});
+
 
 // Carousel
 $(document).ready(function() {
