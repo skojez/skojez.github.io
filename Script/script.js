@@ -15,30 +15,39 @@
 // upIconHandler()
 
 // Navbar
-var navbar = document.getElementById("myNavbar");
+var navbar = document.getElementsByClassName("site-header");
 function showMenu(){
-  navbar.style.display = "block";
-
+  for(const nav of navbar){
+    nav.style.display = "block";
+  }
+ 
 }
 
 $(function() {
   $("#navigation").load("navigation.html");
+});
 
-
-  
+$(function() {
+  $("#footer").load("footer.html");
 });
 
 function hideMenu(){
   if($(window).width() <= 800){
-    navbar.style.display = "none";
+    for(const nav of navbar){
+      nav.style.display = "none";
+    }
   }
 }
 
 $(window).on('resize', function() {
   if (window.innerWidth > 800) {
-     navbar.style.display = "block";
+    for(const nav of navbar){
+      nav.style.display = "block";
+    }
   }else{
-    navbar.style.display = "none"
+    for(const nav of navbar){
+      nav.style.display = "none";
+    }
   }
 });
 
