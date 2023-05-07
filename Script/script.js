@@ -20,6 +20,14 @@ function showMenu(){
   navbar.style.display = "block";
 
 }
+
+$(function() {
+  $("#navigation").load("navigation.html");
+
+
+  
+});
+
 function hideMenu(){
   if($(window).width() <= 800){
     navbar.style.display = "none";
