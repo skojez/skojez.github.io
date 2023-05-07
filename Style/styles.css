@@ -82,46 +82,36 @@ html,body
     font-size: 30px;
 }
   
-.main-news img{
-    height: auto;
-    width: 600px;
-}
 
-.text-news h1{
-    font-size: 30px;
-    font-weight: bold;
+
+.text-news .icon-news{
+    font-size: 15px;
+    color: gray;
     text-align: start;
-    margin: 2px 5px;
+    display: flex;
+    margin: 5px 0 20px 8px;
 }
-
+.text-news .icon-kld h5{
+    font-size: 12px;
+    color: gray;
+    margin-right: 30px;
+}
 .text-news{
     margin-right: 50px;
     margin-top: 20px;
-    margin-left: -20px;
 }
-
 .text-news h5{
     font-size: 15px;
     color: gray;
     text-align: start;
     margin: 2px 5px 10px;
 }
-
 .text-news p{
     width: auto;
     font-size: 15px;
     text-align: justify;
     padding: 0 5px;
 }
-
-.text-news button{
-    color: white;
-    background-color: #010081;
-    border: none;
-    width: 120px;
-    height: 30px;
-}
-
 .text-news h1{
     font-size: 30px;
     font-weight: bold;
@@ -129,25 +119,40 @@ html,body
     margin: 2px 5px;
 }
 
+.main-news .text-news2 h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+    margin: 50px 5px 0;
+}
+.text-news2 .icon-news{
+    font-size: 15px;
+    color: gray;
+    text-align: start;
+    display: flex;
+    margin: 5px 0 20px 5px;
+}
+.text-news2 .icon-kld h5{
+    font-size: 12px;
+    color: gray;
+    margin-right: 30px;
+}
 .text-news2{
     margin-left: 50px;
     padding-top: 40px;
 }
-
 .text-news2 h5{
     font-size: 15px;
     color: gray;
     text-align: start;
     margin: 2px 5px 10px;
 }
-
 .text-news2 p{
     width: auto;
     font-size: 15px;
     text-align: justify;
     padding: 0 5px;
 }
-
 .text-news2 button{
     color: white;
     background-color: #010081;
@@ -307,6 +312,7 @@ textarea:focus, .input:focus {
 .arrowKegiatan a:hover, a:focus, a:active, a:visited, a:link{
     text-decoration: none;
 }
+
 @media screen and (max-width: 800px) {
     html, body{
         padding-top: 40px;
@@ -322,6 +328,19 @@ textarea:focus, .input:focus {
     .main-news{
         margin-top:-100px;
     }
+    .main-news img{
+        height: auto;
+        width: 700px;
+        /* margin-left: 30px; */
+    }
+    .main-news button{
+        color: white;
+        background-color: #010081;
+        border: none;
+        width: 120px;
+        height: 30px;
+        margin-left: -185px;
+    }
     .contain{
         margin: 0px 0 100px 0 ;
         
@@ -334,14 +353,26 @@ textarea:focus, .input:focus {
         
     }
     .site-header ul li a{
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
-
+        padding-bottom: 3px;
+    }
+    .main-news .text-news h1{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: start;
+        margin: 10px 5px 0;
     }
     .text-news{
         margin-left:-10px;
         padding-bottom: 20px;
         margin-right: 10px;
+    }
+    .main-news .text-news2 h1{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: start;
+        margin: -20px 5px 0;
     }
     .text-news2{
         margin-left:-10px;
@@ -455,9 +486,9 @@ textarea:focus, .input:focus {
         position: absolute;
         display: none;
         width: 100%;
-        height: 23vh;
+        height: 43vh;
         border-radius: 10px 10px 10px 10px;
-        padding-top: 10px;
+        padding-top: 22px;
         background-color: #010081;
         font-size: medium;
         text-align: left;
@@ -469,9 +500,9 @@ textarea:focus, .input:focus {
         position: absolute;
         display: none;
         width: 100%;
-        height: 15vh;
+        height: 17vh;
         border-radius: 10px 10px 10px 10px;
-        padding-top: 10px;
+        padding-top: 22px;
         background-color: #010081;
         font-size: medium;
         text-align: left;
@@ -481,14 +512,14 @@ textarea:focus, .input:focus {
     .drop ul li a{
         font-size: 16px;
         color: white;
-        text-decoration: underline;
-        padding-bottom: 5px;
+        text-decoration: none;
+        padding-bottom: 10px;
     }
     .drop2 ul li a{
         font-size: 16px;
         color: white;
-        text-decoration: underline;
-        padding-bottom: 5px;
+        text-decoration: none;
+        padding-bottom: 10px;
     }
     .show {
         display:block;
@@ -502,5 +533,37 @@ textarea:focus, .input:focus {
     }
     .test2{
         transition: 1s;
+    }
+    .main-news .text-news h1{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: start;
+        margin: 20px 5px 0;
+    }
+    .main-news .img1 img{
+        height: auto;
+        width: 700px;
+        margin-left: 30px;
+    }
+    .main-news .bt1 button{
+        color: white;
+        background-color: #010081;
+        border: none;
+        width: 120px;
+        height: 30px;
+        margin-left: -520px;
+    }
+    .main-news .img2 img{
+        height: auto;
+        width: 700px;
+        margin: 50px 0 0 -30px;
+    }
+    .main-news .bt2 button{
+        color: white;
+        background-color: #010081;
+        border: none;
+        width: 120px;
+        height: 30px;
+        margin-left: -515px;
     }
 }
