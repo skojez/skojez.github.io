@@ -46,6 +46,10 @@ html,body
     background-color: #010081;
 }
 
+.sosmed{
+    text-align: center;
+}
+
 .sosmed a{
     width: 50px;
     height: 50px;
@@ -486,6 +490,14 @@ textarea:focus, .input:focus {
     .footer hr{
         width: 50%;
     }
+    .footer h6{
+        border-bottom: 3px solid white; 
+        padding-bottom: 10px;
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -574,5 +586,16 @@ textarea:focus, .input:focus {
         width: 120px;
         height: 30px;
         margin-left: -515px;
+    }
+    .footer h6{
+        border-bottom: 3px solid white; 
+        padding-bottom: 10px;
+    }
+    .footer .kategori, .lt{
+        margin-top: 30px;
+    }
+    .footer .kategori a, .lt a{
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
     }
 }
