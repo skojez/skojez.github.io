@@ -332,7 +332,6 @@ textarea:focus, .input:focus {
         top: -15px;
         font-size: 20px;
     }
-    
     .judul h1{
         text-align: center;
         padding-top: 100px;
@@ -371,7 +370,7 @@ textarea:focus, .input:focus {
         width:auto;
         display:flex;
     }
-    /* .footer hr{
+    .footer hr{
         width: 50%;
     }
     .footer h6{
@@ -381,7 +380,10 @@ textarea:focus, .input:focus {
         display: block;
         margin-left: auto;
         margin-right: auto;
-    } */
+    }
+    .footer .kategori a, .lt a{
+        text-decoration: none;
+    }
 }
 
 
@@ -493,11 +495,12 @@ textarea:focus, .input:focus {
         border-bottom: 3px solid white; 
         padding-bottom: 10px;
     }
-    /* .footer .kategori, .lt{
+    .footer .kategori, .lt{
         margin-top: 30px;
     }
     .footer .kategori a, .lt a{
         border-bottom: 1px solid white;
         padding-bottom: 10px;
-    } */
+        text-decoration: none;
+    }
 }
