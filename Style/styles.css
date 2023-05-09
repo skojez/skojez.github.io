@@ -271,10 +271,16 @@ html,body
 .drop2{
     display: none;
 }
+.drop3{
+    display: none;
+}
 .show {
     display :inline;
 }
 .show2{
+    display: inline;
+}
+.show3{
     display: inline;
 }
 .text {
@@ -461,16 +467,32 @@ textarea:focus, .input:focus {
         margin-left: -20px;
         cursor: pointer;
     }
+    .drop3{
+        position: relative;
+        display: none;
+        font-size: 12px;
+        width: 200px;
+        height: auto;
+        margin-top: -35px;
+        margin-left: -20px;
+        cursor: pointer;
+    }
     .show {
         display: block;
     }
     .show2{
         display: block;
     }
+    .show3{
+        display: block;
+    }
     .test{
         transition: 1s;
     }
     .test2{
+        transition: 1s;
+    }
+    .test3{
         transition: 1s;
     }
     .fa-magnifying-glass{
@@ -507,7 +529,7 @@ textarea:focus, .input:focus {
         position: absolute;
         display: none;
         width: 100%;
-        height: 42vh;
+        height: 44vh;
         border-radius: 10px 10px 10px 10px;
         padding-top: 22px;
         background-color: #010081;
@@ -517,6 +539,20 @@ textarea:focus, .input:focus {
         left: -32px;
     }
     .drop2
+    {
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 17vh;
+        border-radius: 10px 10px 10px 10px;
+        padding-top: 22px;
+        background-color: #010081;
+        font-size: medium;
+        text-align: left;
+        top : 35px;
+        left: -32px;
+    }
+    .drop3
     {
         position: absolute;
         display: none;
@@ -542,6 +578,12 @@ textarea:focus, .input:focus {
         text-decoration: none;
         padding-bottom: 5px;
     }
+    .drop3 ul li a{
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        padding-bottom: 5px;
+    }
     .show {
         display:block;
         
@@ -549,10 +591,16 @@ textarea:focus, .input:focus {
     .show2{
         display:block;
     }
+    .show3{
+        display:block;
+    }
     .test{
         transition: 1s;
     }
     .test2{
+        transition: 1s;
+    }
+    .test3{
         transition: 1s;
     }
     .main-news .text-news h1{
