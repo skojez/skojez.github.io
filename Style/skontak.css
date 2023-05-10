@@ -486,6 +486,11 @@ textarea:focus, .input:focus {
         margin-left: auto;
         margin-right: auto;
     }
+    .footer .kategori a, .lt a{
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        text-decoration: none;
+    }
 }
 
 
@@ -600,5 +605,6 @@ textarea:focus, .input:focus {
     .footer .kategori a, .lt a{
         border-bottom: 1px solid white;
         padding-bottom: 10px;
+        text-decoration: none;
     }
 }
