@@ -101,6 +101,7 @@ html,body
     background-size: cover;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 
@@ -324,6 +325,7 @@ textarea:focus, .input:focus {
     opacity: 1;
 }
 .footer{
+    margin-top: 50px;
     padding-top:5px;
     overflow-y: hidden;
 }
@@ -630,7 +632,7 @@ textarea:focus, .input:focus {
         border: none;
         width: 120px;
         height: 30px;
-        margin-left: -520px;
+        margin-left: -1px;
     }
     .main-news .img2 img{
         height: auto;
