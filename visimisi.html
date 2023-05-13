@@ -14,13 +14,87 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <style>
+      li{
+        padding: 5px 0px;
+      }
+      @media screen and (min-width: 801px) {
+        .text-sejarah{
+          text-align: justify; 
+          font-size: 17px; 
+          width: 50%;
+          margin-right:auto;
+          margin-left:auto;
+          padding-top: 20px;
+        }
+       
+      }
+
+      @media screen and (max-width: 800px) {
+        .judul h1{
+          font-size: 15px;
+         }
+        .text-sejarah{
+          text-align: justify; 
+          font-size: 10px; 
+          width: 70%;
+          margin-right:auto;
+          margin-left:auto;
+          padding-top: 20px;
+        }
+        ol{
+          padding-top: 0;
+          padding-left: 0;
+          margin-left: -7px;
+        }
+      }
+    </style>
 </head>
 
 <body class="d-flex flex-column"> 
   <div id="top"></div>
   <div id="navigation"></div>
   
-  <section style="height: 100vh;"></section>
+  <section class="video">
+    <div class="container-fluid d-flex">
+        <div class="bg">
+          <h1 style="font-size: 50px; color: white; text-align: center; padding-top: 220px; font-weight: bold;">VISI DAN MISI</h1>
+       </div>
+    </div>
+</section>
+
+<section>
+  <div class="judul">
+    <h1>Visi dan Misi Teknik Informatika Universitas Riau</h1>
+    <hr align="center" color="black">
+  </div>
+
+  <div class="container-fluid d-flex" style="padding-bottom: 90px;">
+    <div class="text-sejarah">
+      <p> <span style="font-weight:700;">Visi:</span>  <br>
+        Menjadi Program Studi Teknik Informatika Terkemuka Berbasis Riset dan Teknologi yang Bermartabat di Kawasan Asia Tenggara pada Tahun 2035.</p>
+        <p style="position: relative;"> <span style="font-weight:700;">Misi:</span>  <br>
+          <ol style="padding-left: 16px;">
+            <li>
+              Menyelenggarakan pendidikan Sarjana dalam bidang ilmu Teknik Informatika, berbasis penelitian dan pengembangan untuk menghasilkan lulusan unggul, profesional dan kompetitif berlandaskan ketaqwaan kepada Tuhan Yang Maha Esa.
+            </li>
+            <li>
+              Melaksanakan kegiatan penelitian dan pengembangan dalam bidang Teknik Informatika berbasis riset  dan Teknologi, Innovatif dan Kreatif baik di lingkungan Nasional maupun Internasional. 
+            </li>
+            <li>
+              Menghasilkan publikasi ilmiah, teknologi dan paten dalam bidang Ilmu Teknik Informatika. 
+            </li>
+            <li>
+              Menyelenggarakan pendidikan Sarjana dalam bidang ilmu Teknik Informatika, berbasis penelitian dan pengembangan untuk menghasilkan lulusan unggul, profesional dan kompetitif berlandaskan ketaqwaan kepada Tuhan Yang Maha Esa.
+            </li>
+            <li>
+              Mengembangkan kerjasama yang luas dengan lembaga pendidikan tinggi, instansi pemerintahan dan lembaga lain dalam dan luar negeri.
+            </li>
+          </ol>
+         </p>
+    </div>
+ </div>
+</section>
   
   <a class ="upIcon" id="myBtn" href="#">
     <i class="fa-solid fa-circle-arrow-up" ></i>
