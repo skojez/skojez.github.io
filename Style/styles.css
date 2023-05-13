@@ -29,6 +29,7 @@ html,body
     display:none;
 }
 
+
 .site-header{
     background-color: lightgray;
     font-weight: 600;
@@ -255,6 +256,7 @@ html,body
 .site-header ul li a{
     width: 18.2%;
 }
+
 .site-header .rusuh{
     width: 0;
 }
@@ -342,6 +344,9 @@ textarea:focus, .input:focus {
 .arrowKegiatan a:hover, a:focus, a:active, a:visited, a:link{
     text-decoration: none;
 }
+button:hover{
+    transform: scale(1.05);
+   }
 
 @media screen and (max-width: 800px) {
     html, body{
@@ -530,10 +535,18 @@ textarea:focus, .input:focus {
         margin-left: auto;
         margin-right: auto;
     }
+    .site-header ul li a:hover{
+        width: 18.2%;
+        color: #000000;
+    }
 }
 
 
 @media screen and (min-width: 801px) {
+    .site-header ul li a:hover{
+        width: 18.2%;
+        color: #010081;
+    }
     .drop
     {
         position: absolute;

@@ -197,6 +197,11 @@ textarea:focus, .input:focus {
     overflow:hidden; background:none!important; height:250px; width:auto;display:flex;
 }
 
+
+button:hover{
+    transform: scale(1.05);
+   }
+
 @media screen and (max-width: 800px) {
     html, body{
         padding-top: 40px;
@@ -384,10 +389,18 @@ textarea:focus, .input:focus {
     .footer .kategori a, .lt a{
         text-decoration: none;
     }
+    .site-header ul li a:hover{
+        width: 18.2%;
+        color: #000000;
+    }
 }
 
 
 @media screen and (min-width: 801px) {
+    .site-header ul li a:hover{
+        width: 18.2%;
+        color: blue;
+    }
     .drop
     {
         position: absolute;

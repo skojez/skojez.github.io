@@ -314,6 +314,9 @@ textarea:focus, .input:focus {
 .gmap_canvas{
     overflow:hidden; background:none!important; height:250px; width:auto;display:flex;
 }
+button:hover{
+    transform: scale(1.05);
+   }
 
 @media screen and (max-width: 800px) {
     html, body{
@@ -491,10 +494,18 @@ textarea:focus, .input:focus {
         padding-bottom: 10px;
         text-decoration: none;
     }
+    .site-header ul li a:hover{
+        width: 18.2%;
+        color: #000000;
+    }
 }
 
 
 @media screen and (min-width: 801px) {
+    .site-header ul li a:hover{
+        width: 18.2%;
+        color: blue;
+    }
     .drop
     {
         position: absolute;

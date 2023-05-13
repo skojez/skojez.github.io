@@ -335,7 +335,9 @@ textarea:focus, .input:focus {
 .isi {
     
 }
-
+button:hover{
+    transform: scale(1.05);
+   }
 
 @media screen and (max-width: 800px) {
     html, body{
@@ -525,9 +527,18 @@ textarea:focus, .input:focus {
         margin-left: auto;
         margin-right: auto;
     }
+    .site-header ul li a:hover{
+        width: 18.2%;
+        color: #000000;
+    }
 }
 
 @media screen and (min-width: 801px) {
+    
+    .site-header ul li a:hover{
+        width: 18.2%;
+        color: blue;
+    }
     .drop
     {
         position: absolute;
@@ -649,5 +660,9 @@ textarea:focus, .input:focus {
     .footer .kategori a, .lt a{
         border-bottom: 1px solid white;
         padding-bottom: 10px;
+    }
+    .site-header ul li a:hover{
+        width: 18.2%;
+        color: #000000;
     }
 }
