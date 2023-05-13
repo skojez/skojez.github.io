@@ -10,21 +10,66 @@
     <title>Sejarah</title>
     <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <link rel="stylesheet" href="/Style/svideo.css">
+    <link rel="stylesheet" href="/Style/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
     <style>
       @media screen and (min-width: 801px) {
+        .judul h1{
+          font-size: 40px;
+          text-align: center;
+          padding-top: 50px;
+        }
         .text-sejarah{
           text-align: justify; 
-          font-size: 17px; 
+          font-size: 20px; 
           width: 70%;
           margin-right:auto;
           margin-left:auto;
           padding-top: 20px;
         }
-       
+        .sambutan img{
+          width: 100%;
+          height: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 50px;
+        }
+        .card img{
+          border-radius: 50%;
+          width: 250px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+        }
+        .card-body h3{
+          margin-top: 10px;
+          font-weight: bold;
+        }
+        .card-body h5{
+          margin-bottom: 30px;
+        }
+        .card-body p{
+          text-align: justify;
+          margin-bottom: -5px;
+        }
+        .kartu-lain img{
+          width: 150px;
+          height: auto;
+          box-shadow: 10px;
+        }
+        .kartu-lain .card{
+          border: none;
+        }
+        .kartu-lain .card .card-body p{
+          font-size: 20px;
+          text-align: center;
+          font-weight: bold;
+          margin-top: -20px;
+        }
       }
 
       @media screen and (max-width: 800px) {
@@ -35,6 +80,14 @@
           margin-right:auto;
           margin-left:auto;
           padding-top: 20px;
+        }
+        .sambutan img{
+          width: 100%;
+          height: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 50px;
         }
       }
     </style>
@@ -55,20 +108,110 @@
 <section>
   <div class="judul">
     <h1>Sejarah Teknik Informatika Universitas Riau</h1>
-    <hr align="center" color="black">
+    <!-- <hr align="center" color="black"> -->
   </div>
 
   <div class="container-fluid d-flex" style="padding-bottom: 90px;">
     <div class="text-sejarah">
-      <p>Program Studi Teknik Informatika merupakan salah satu program studi sarjana yang ada di Universitas Riau (UNRI). Program Studi Teknik Informatika berada di bawah Jurusan Teknik Elektro. Program Studi Teknik Informatika bisa dikatakan sebagai program studi yang masih muda dibandingkan dengan Program Studi lain yang ada di Fakultas Teknik.
-
-        Program Studi Teknik Informatika didirikan pada tahun 2013 dengan SK No: 485/E/O/2013. SK pendiriannya tertanggal 18 Oktober 2013. Kemudian Program Studi Teknik Informatika mulai beroperasi pada bulan Juli 2014 sampai dengan sekarang.
-        
-        Program Studi Teknik Informatika memiliki 3 konsentrasi, yaitu Komputasi Cerdas dan Visualisasi (KCV), Rekayasa Perangkat Lunak (RPL), dan Komputasi Berbasis Jaringan (KBJ). Lulusan Program Studi Teknik Informatika mendapatkan gelar S.T. (Sarjana Teknik). Program Studi Teknik Informatika menghasilkan lulusanya yang unggul.
-        
-        Tahun 2019 Program Studi Teknik Informatika sudah mendapatkan akreditas “B” dengan SK BAN-PT No. 2693/SK/BAN-PT/Akred/S/VII/2019.</p>
+      <p>Program Studi Teknik Informatika merupakan salah satu program studi sarjana yang ada di Universitas Riau (UNRI). Program Studi Teknik Informatika berada di bawah Jurusan Teknik Elektro. Program Studi Teknik Informatika bisa dikatakan sebagai program studi yang masih muda dibandingkan dengan Program Studi lain yang ada di Fakultas Teknik. <br><br>Program Studi Teknik Informatika didirikan pada tahun 2013 dengan SK No: 485/E/O/2013. SK pendiriannya tertanggal 18 Oktober 2013. Kemudian Program Studi Teknik Informatika mulai beroperasi pada bulan Juli 2014 sampai dengan sekarang.</p>
     </div>
- </div>
+  </div>
+
+  <div class="sambutan">
+    <img src="Asset/Images/sambutan.jpg" alt="">
+  </div>
+
+  <div class="container-fluid d-flex" style="padding-bottom: 90px;">
+    <div class="text-sejarah">
+      <p>Program Studi Teknik Informatika memiliki 3 konsentrasi, yaitu Komputasi Cerdas dan Visualisasi (KCV), Rekayasa Perangkat Lunak (RPL), dan Komputasi Berbasis Jaringan (KBJ). Lulusan Program Studi Teknik Informatika mendapatkan gelar S.T. (Sarjana Teknik). Program Studi Teknik Informatika menghasilkan lulusanya yang unggul. Tahun 2019 Program Studi Teknik Informatika sudah mendapatkan akreditas “B” dengan SK BAN-PT No. 2693/SK/BAN-PT/Akred/S/VII/2019.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section-divider">
+      <span>KONSENTRASI</span>
+      <div class="container-fluid">
+        <div class="row" style="padding-bottom: 30px;">
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center kartu-konsen">
+            <div class="card h-100 w-100">
+              <img src="Asset/Images/KCV.jpeg">
+              <div class="card-body">
+                <h3 class="card-title">KCV</h3>
+                <h5>(Komputasi Cerdas dan Visualisasi)</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia pariatur amet beatae obcaecati blanditiis praesentium possimus, vitae tenetur eligendi inventore mollitia asperiores non quos, autem explicabo ab fugit dolores voluptas quae alias! Vitae dignissimos minus expedita reiciendis ad iure iste obcaecati saepe nisi nobis, voluptatum debitis, optio illo sit esse.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center kartu-konsen">
+            <div class="card h-100 w-100">
+              <img src="Asset/Images/RPL.jpeg">
+              <div class="card-body">
+                <h3 class="card-title">RPL</h3>
+                <h5>(Rekayasa Perangkat Lunak)</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia pariatur amet beatae obcaecati blanditiis praesentium possimus, vitae tenetur eligendi inventore mollitia asperiores non quos, autem explicabo ab fugit dolores voluptas quae alias! Vitae dignissimos minus expedita reiciendis ad iure iste obcaecati saepe nisi nobis, voluptatum debitis, optio illo sit esse.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center kartu-konsen">
+            <div class="card h-100 w-100">
+              <img src="Asset/Images/KBJ.jpg">
+              <div class="card-body">
+                <h3 class="card-title">KBJ</h3>
+                <h5>(Komputasi Berbasis Jaringan)</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia pariatur amet beatae obcaecati blanditiis praesentium possimus, vitae tenetur eligendi inventore mollitia asperiores non quos, autem explicabo ab fugit dolores voluptas quae alias! Vitae dignissimos minus expedita reiciendis ad iure iste obcaecati saepe nisi nobis, voluptatum debitis, optio illo sit esse.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section-divider">
+      <div class="container-fluid">
+        <div class="row" style="padding-top: 50px; padding-bottom: 30px;">
+          <div class="col-lg-3 col-sm-12 d-flex justify-content-center kartu-lain">
+            <div class="card h-100 w-100">
+              <img src="Asset/Images/Prodi.jpg">
+              <div class="card-body">
+                <h5>KONSENTRASI</h5>
+                <p>3</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 d-flex justify-content-center kartu-lain">
+            <div class="card h-100 w-100">
+              <img src="Asset/Images/mhs.png">
+              <div class="card-body">
+                <h5>MAHASISWA</h5>
+                <p>1500</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 d-flex justify-content-center kartu-lain">
+            <div class="card h-100 w-100">
+              <img src="Asset/Images/dosen.png">
+              <div class="card-body">
+                <h5>DOSEN</h5>
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-12 d-flex justify-content-center kartu-lain">
+            <div class="card h-100 w-100">
+              <img src="Asset/Images/tenaga pdd.jpg">
+              <div class="card-body">
+                <h5 class="card-title">TENAGA KEPENDIDIKAN</h5>
+                <p>2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
   
   <a class ="upIcon" id="myBtn" href="#">

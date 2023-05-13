@@ -10,10 +10,21 @@
     <title>Sertifikasi</title>
     <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <link rel="stylesheet" href="/Style/svideo.css">
+    <link rel="stylesheet" href="/Style/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <style>
+      .main-news .img-person img{
+        width: 50%;
+        height: auto;
+        border-radius: 50%;
+      }
+      .main-news .img-kontak img{
+        width: 30%;
+        height: auto;
+      }
+    </style>
 </head>
 
 <body class="d-flex flex-column"> 
@@ -25,6 +36,101 @@
   <a class ="upIcon" id="myBtn" href="#">
     <i class="fa-solid fa-circle-arrow-up" ></i>
   </a>
+
+  <section class="berita" style="margin-top: 30px;margin-bottom : 50px;">
+    <div class="container-fluid d-flex">
+        <div class="bg">
+          <h1 style="color: white; text-align: center; padding-top: 200px; font-weight: bold;">Sertifikasi</h1>
+       </div>
+    </div>
+  </section>
+
+  <section class="main-news">
+    <div class="container">
+      <div class="section-divider">
+        <span>MIKROTIK ACADEMY</span>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-6 col-sm-12 p-2">
+              <div class="img-mikro">
+                <img src="Asset/Images/Mikrotik-Academy-UNRI-web.jpg" class="img-fluid" alt="Berita1">
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <div class="container"><p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit aspernatur aliquam culpa necessitatibus architecto rem nihil explicabo earum adipisci!</p>
+            </div>
+          </div>
+          
+          <div class="row" style="display: flex; flex-wrap: wrap-reverse;">
+            <div class="col-xl-6 col-sm-12">
+              <div class="container" >
+                <div class="text-news2 wrapper">
+                  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium voluptatem fugit in incidunt assumenda dignissimos iusto maxime explicabo molestiae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 p-2">
+              <div class="img-mikro2">
+                <img src="Asset/Images/MikrotikGambar.jpg" class="img-fluid" alt="Berita1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-news">
+    <div class="container">
+      <div class="section-divider">
+        <span>GALERI KEGIATAN MIKROTIK</span>
+        <div class="container-fluid">
+          <!-- UNTUK GAMBAR CAROUSEL -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-news">
+    <div class="container">
+      <div class="section-divider">
+        <span>PERSONIL DAN KONTAK</span>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-6 col-sm-12 p-2">
+              <div class="img-person">
+                <img src="Asset/Images/BukLinna.jpg" class="img-fluid" alt="Berita1">
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <div class="container">
+                <div class="text-news">
+                  <div class="judul"><h1>Personil</h1></div>
+                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, accusantium quis? Animi, recusandae modi natus delectus cupiditate dolore placeat nam.</p>
+                </div>
+                
+            </div>
+          </div>
+          
+          <div class="row" style="display: flex; flex-wrap: wrap-reverse;">
+            <div class="col-xl-6 col-sm-12">
+              <div class="container" >
+                <div class="text-news2 wrapper">
+                  <div class="judul"><h1>Kontak</h1></div>
+                  <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tempora debitis iure neque quod veniam iste, adipisci ab est distinctio?</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 p-2">
+              <div class="img-kontak">
+                <img src="Asset/Icon/ikon_phone-removebg-preview.png" class="img-fluid" alt="Berita1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script>
     let mybutton = document.getElementById("myBtn");
