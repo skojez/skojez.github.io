@@ -10,10 +10,149 @@
     <title>Berita</title>
     <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <link rel="stylesheet" href="/Style/skberita.css">
+    <link rel="stylesheet" href="/Style/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <style>
+      .contain{
+        margin: 0 auto;
+        max-width: 1400px;
+        width: 100%;
+      }
+      .item{
+        align-items: center;
+        color: white;
+        display: flex;
+        height: auto;
+        justify-content: center;
+      }
+      @media screen and (min-width: 801px){
+        .text-news .icon-news{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: 5px 0 20px 8px;
+        }
+        .text-news .icon-news h5{
+          font-size: 12px;
+          color: gray;
+          margin-right: 15px;
+        }
+        .text-news{
+          margin-right: 50px;
+          margin-top: 20px;
+        }
+        .text-news h5{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          margin: 2px 5px 10px;
+        }
+        .text-news p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          padding: 0 5px;
+        }
+        .text-news h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 2px 5px;
+        }
+        .main-news .text-news2 h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 50px 5px 0;
+        }
+        .main-news .text-news h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 10px 5px 0;
+        }
+        .main-news .img1 img{
+          height: auto;
+          width: 700px;
+          margin-left: 30px;
+        }
+        .main-news button{
+          font-size: 15px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 200px;
+          height: 40px;
+          margin-left: -1px;
+        }
+        .main-news .img2 img{
+          height: auto;
+          width: 700px;
+          margin: 50px 0 0 -30px;
+        }
+      }
+      @media screen and (max-width: 800px){
+        .contain{
+          margin: 0px 0 100px 0 ;
+        }
+        .owl-dots{
+          margin-top:0;
+        }
+        .item img{
+          min-height: 200px;
+          width: 100%;
+          margin-left:-0.2%;
+        }
+        .main-news{
+          margin-top:-100px;
+        }
+        .main-news img{
+          height: auto;
+          width: 700px;
+        }
+        .text-news .icon-news{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: 5px 0 20px 5px;
+        }
+        .text-news .icon-news h5{
+          font-size: 12px;
+          color: gray;
+          margin: 2px 15px 0 5px;
+        }
+        .main-news .text-news h1{
+          font-size: 20px;
+          font-weight: bold;
+          text-align: start;
+          margin: 10px 5px 0;
+        }
+        .main-news button{
+          font-size: 13px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 170px;
+          height: 35px;
+          margin-left: -140px;
+        }
+        .text-news{
+          margin-left:-10px;
+          padding-bottom: 20px;
+          margin-right: 10px;
+        }
+        .text-news p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          padding: 0 5px;
+        }
+      }
+    </style>
 </head>
 
 <body class="d-flex flex-column"> 
@@ -23,8 +162,8 @@
   <section class="k-berita">
     <div class="container-fluid d-flex">
         <div class="bg">
-          <h1 style="font-size: 30px; color: #4141ff; text-align: center; padding-top: 250px; padding-bottom: 10px; font-weight: bold;">Berita</h1>
-          <h3 style="font-size: 50px; color: white; text-align: center; font-weight: bold;">Kategori</h3>
+          <h1 style="font-size: 30px; color: #4141ff; text-align: center; padding-top: 220px; padding-bottom: 10px; font-weight: bold;">Berita</h1>
+          <h3 style="font-size: 50px; color: white; text-align: center; font-weight: bold;">KATEGORI</h3>
        </div>
     </div>
   </section>
@@ -34,7 +173,7 @@
       <!-- <div class="section-divider">
         <span>BERITA</span> -->
         <div class="container-fluid">
-          <div class="row">
+          <div class="row" style="padding-top:20px;">
             <div class="col-xl-6 col-sm-12 p-2">
               <div class="img1">
                 <img src="Asset/Images/Berita.jpg" class="img-fluid" alt="Berita1">
@@ -54,7 +193,7 @@
                     Ketua Prodi Teknik Informatika,  Dr. Feri Candra turut  mengapresiasi perolehan ini “Capaian ini sangat positif, dari Prodi mendukung berbagai bentuk prestasi Mahasiswa baik dibidang akademis maupun non akademis”.</p>
                   <div class="bt1 d-grid" style="padding: 0 5px;">
                     <a href="berita.html">
-                    <button type="button">Read More ></button>
+                    <button type="button">Baca Selengkapnya ></button>
                     </a>
                   </div>
                 </div>
@@ -62,7 +201,7 @@
             </div>
           </div>
           
-          <div class="row" style="padding-top:80px;">
+          <div class="row" style="padding-top:20px;">
             <div class="col-xl-6 col-sm-12 p-2">
               <div class="img1">
                 <img src="Asset/Images/Berita2.jpg" class="img-fluid" alt="Berita1">
@@ -83,14 +222,14 @@
                     Dalam orasinya, Prof Azriyenni menyampaikan bahwa kontinuitas penyaluran daya listrik sering dihadapkan pada masalah gangguan yang timbul dalam sistem tenaga listrik. Karena itu, estimasi gangguan pada saluran transmisi tenaga listrik sangat penting untuk mempercepat proses perbaikan. “Perbaikan yang cepat akan mengurangi keluhan pelanggan,” jelasnya. Faktor-faktor tersebut, ungkap Azriyenni, semakin penting bagi perusahaan penyedia energi listrik dalam menghadapi tantangan saat ini. Oleh sebab itu, perlu dikembangkan algoritma untuk estimasi gangguan secara akurat dan cepat.</p>
                   <div class="bt1 d-grid" style="padding: 0 5px;">
                     <a href="berita.html">
-                    <button type="button">Read More ></button>
+                    <button type="button">Baca Selengkapnya ></button>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row" style="padding-top:80px;">
+          <div class="row" style="padding-top:20px;">
             <div class="col-xl-6 col-sm-12 p-2">
               <div class="img1">
                 <img src="Asset/Images/Berita3.jpg" class="img-fluid" alt="Berita1">
@@ -111,14 +250,14 @@
                     Doktor Irsan mempertahanakn disertasinya yang berjudul Pengembangan Teknik Indoor Localization Menggunakan Metode Deep Learning pada Fingerprinting LoRa Berdasarkan Perubahan Lingkungan. Pak Irsan selama studi S3 dibimbing oleh Prof. Dr. Ir. Riri Fitriasari, MSc., MM. Semoga, dengan bertambahnya SDM S3 di Prodi Teknik Informatika dan Jurusan Teknik Elektro, mutu di jurusan akan meningkat.</p>
                   <div class="bt1 d-grid" style="padding: 0 5px;">
                     <a href="berita.html">
-                    <button type="button">Read More ></button>
+                    <button type="button">Baca Selengkapnya ></button>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row" style="padding-top:80px;">
+          <div class="row" style="padding-top:20px;">
             <div class="col-xl-6 col-sm-12 p-2">
               <div class="img1">
                 <img src="Asset/Images/Berita4.jpg" class="img-fluid" alt="Berita1">
@@ -141,14 +280,14 @@
                     Semoga dengan bergabungnya beliau di WD3 FT UNRI, maka FT UNRI tetap terdepan, dan pada khususnya Jurusan Teknik Elektro mencapai mutu yang optimal. Serah terima jabatan para Wakil Dekan periode 2021-2025 telah dilakukan pada hari yang sama Senin, 12 Juli 2021 di Lobby Gedung C Fakultas Teknik Universitas Riau.</p>
                   <div class="bt1 d-grid" style="padding: 0 5px;">
                     <a href="berita.html">
-                    <button type="button">Read More ></button>
+                    <button type="button">Baca Selengkapnya ></button>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row" style="padding-top:80px;">
+          <div class="row" style="padding-top:20px; padding-bottom: 30px;">
             <div class="col-xl-6 col-sm-12 p-2">
               <div class="img1">
                 <img src="Asset/Images/Berita5.jpg" class="img-fluid" alt="Berita1">
@@ -173,7 +312,7 @@
                     “Terimakasih kami ucapkan kepada pejabat yang lama atas pengabdiannya selama ini, dan selamat kami ucapkan kepada pejabat baru dilantik, semoga fakultas dan unit yang dipimpin ini bisa menjadi wahana pengembangan pendidikan maupun pengembangan pembentukan karakter Sumber Daya Manusia (SDM) kedepannya,” terang Rektor.</p>
                   <div class="bt1 d-grid" style="padding: 0 5px;">
                     <a href="berita.html">
-                    <button type="button">Read More ></button>
+                    <button type="button">Baca Selengkapnya ></button>
                     </a>
                   </div>
                 </div>

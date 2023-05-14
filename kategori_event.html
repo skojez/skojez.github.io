@@ -14,6 +14,90 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <style>
+      @media screen and (min-width: 801px){
+        .main-event img{
+          height: auto;
+          width: 400px;
+          margin-left: 200px;
+        }
+        .text-event h1{
+          font-size: 35px;
+          font-weight: bold;
+          text-align: start;
+          margin: 60px 0 25px -130px;
+        }
+        .text-event p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          margin: 30px 0 0 -130px;
+        }
+        .text-event button{
+          font-size: 14px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 180px;
+          height: 35px;
+          margin: 10px 0 0 -135px;
+        }
+        .text-event .icon-event{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: -20px 0 20px -130px;
+        }
+        .text-event .icon-event h5{
+          font-size: 12px;
+          color: gray;
+          margin: 1px 20px 0 5px;
+        }
+      }
+      @media screen and (max-width: 800px){
+        .main-event img{
+          height: auto;
+          width: 150px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .text-event h1{
+          font-size: 10px;
+          font-weight: bold;
+          text-align: start;
+          margin: 25px 0 25px -15px;
+        }
+        .text-event p{
+          width: auto;
+          font-size: 8px;
+          text-align: justify;
+          margin: 15px 0 0 -15px;
+        }
+        .text-event button{
+          color: white;
+          background-color: #010081;
+          border: none;
+          font-size: 7px;
+          width: 95px;
+          height: 20px;
+          margin: 10px 0 0 -20px;
+        }
+        .text-event .icon-event{
+          font-size: 8px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: -20px 0 5px -15px;
+        }
+        .text-event .icon-event h5{
+          font-size: 8px;
+          color: gray;
+          margin: 1px 8px 0 3px;
+        }
+      }
+    </style>
 </head>
 
 <body class="d-flex flex-column"> 
@@ -23,143 +107,123 @@
   <section class="k-berita">
     <div class="container-fluid d-flex">
         <div class="bg">
-          <h1 style="font-size: 30px; color: #4141ff; text-align: center; padding-top: 250px; padding-bottom: 10px; font-weight: bold;">Event</h1>
-          <h3 style="font-size: 50px; color: white; text-align: center; font-weight: bold;">Kategori</h3>
+          <h1 style="font-size: 30px; color: #4141ff; text-align: center; padding-top: 220px; padding-bottom: 10px; font-weight: bold;">Kegiatan</h1>
+          <h3 style="font-size: 50px; color: white; text-align: center; font-weight: bold;">KATEGORI</h3>
        </div>
     </div>
   </section>
 
-  <section class="main-news" style="margin-top: 30px; margin-bottom: 70px;">
+  <section class="main-event" style="margin-top: 30px; margin-bottom: 70px;">
     <div class="container">
-      <div class="section-divider">
-        <span>EVENT</span>
+      <!-- <div class="section-divider">
+        <span>KEGIATAN</span> -->
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-6 col-sm-12 p-2">
-              <div class="img1">
-                <img src="Asset/Images/event.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
-              </div>
+          <div class="row" style="padding-top: 20px;">
+            <div class="col-xl-6 col-sm-6 p-2">
+              <img src="Asset/Images/EVENT 1.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
             </div>
-            <div class="col-xl-6 col-sm-12">
+            <div class="col-xl-6 col-sm-6">
               <div class="container" >
-                <div class="text-news wrapper">
-                  <h1> [EVENT] Orientasi Program FGA DTS 2022</h1>
-                  <div class="icon-news">
+                <div class="text-event">
+                  <h1>Orientasi Program FGA DTS 2022</h1>
+                  <div class="icon-event">
                     <i class="fa-solid fa-calendar-days"></i>
                     <h5>13 July 2022</h5>
                     <i class="fa-solid fa-user"></i>
                     <h5>Dian Ramadhani</h5>
                   </div>
                   <p class="text">Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) 2022  Program Studi Teknik Informatika Universitas Riau kembali bekerja sama dengan Kementerian Komunikasi dan Informatika RI menyelenggarakan Program Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) Tahun 2022. Tahun ini,  pelatihan terselenggara di 57 Perguruan Tinggi baik negeri maupun swasta yang tersebar di seluruh Indonesia.  Universitas Riau (UNRI) merupakan...</p>
-                  <div class="bt1 d-grid" style="padding: 0 5px;">
-                    <a href="berita.html">
-                    <button type="button">Read More ></button>
-                    </a>
+                  <div class="d-grid" style="padding: 0 5px;">
+                    <button type="button">Baca Selengkapnya ></button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           
-          <div class="row" style="padding-top:80px;">
-            <div class="col-xl-6 col-sm-12 p-2">
-              <div class="img1">
-                <img src="Asset/Images/EVENT 2.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
-              </div>
+          <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-6 p-2">
+              <img src="Asset/Images/EVENT 2.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
             </div>
-            <div class="col-xl-6 col-sm-12" >
+            <div class="col-xl-6 col-sm-6" >
               <div class="container" >
-                <div class="text-news wrapper">
-                  <h1>[EVENT] KULIAH UMUM : Data Analytics for Health Sector</h1>
-                  <div class="icon-news">
+                <div class="text-event">
+                  <h1>KULIAH UMUM : Data Analytics for Health Sector</h1>
+                  <div class="icon-event">
                     <i class="fa-solid fa-calendar-days"></i>
                     <h5>17 Juni 2022</h5>
                     <i class="fa-solid fa-user"></i>
                     <h5>Dian Ramadhani</h5>
                   </div>
                   <p class="text">Jurusan Teknik Elektro Program Studi Teknik Informatika yang bekerjasama dengan GDSC-UR (Google Developer Student Clubs Universitas Riau) mengadakan webinar (kuliah umum) yang merupakan agenda tahunan program studi teknik informatika. Topik kuliah umum ini adalah data analytics yang berkaitan dengan sektor kesehatan, berdasarkan fenomena pandemi covid-19.  Kegiatan ini di mulai dengan kata sambutan oleh Kaprodi Teknik...</p>
-                  <div class="bt1 d-grid" style="padding: 0 5px;">
-                    <a href="berita.html">
-                    <button type="button">Read More ></button>
-                    </a>
+                  <div class="d-grid" style="padding: 0 5px;">
+                    <button type="button">Baca Selengkapnya ></button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row" style="padding-top:80px;">
-            <div class="col-xl-6 col-sm-12 p-2">
-              <div class="img1">
-                <img src="Asset/Images/EVENT 3.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
-              </div>
+          <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-6 p-2">
+              <img src="Asset/Images/EVENT 3.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
             </div>
-            <div class="col-xl-6 col-sm-12" >
+            <div class="col-xl-6 col-sm-6" >
               <div class="container" >
-                <div class="text-news wrapper">
-                  <h1>[EVENT] WEBINAR : How to Create a Project/Research Poster</h1>
-                  <div class="icon-news">
+                <div class="text-event">
+                  <h1>WEBINAR : How to Create a Project/Research Poster</h1>
+                  <div class="icon-event">
                     <i class="fa-solid fa-calendar-days"></i>
                     <h5>15 Juni 2022</h5>
                     <i class="fa-solid fa-user"></i>
                     <h5>Dian Ramadhani</h5>
                   </div>
                   <p class="text">Program Studi Teknik Informatika Universitas Riau bekerjasama dengan GDSC-UR (Google Developer Student Clubs Universitas Riau) mengadakan webinar yang merupakan salah satu dari dua rangkaian kegiatan Informatic Poster Days 2022. Informatic Poster Days 2022 sendiri digelar dengan mengadakan webinar dan lomba poster. Webinar yang diadakan secara virtual menggunakan Zoom Meeting  pada tanggal 15 Juni 2022 ini...</p>
-                  <div class="bt1 d-grid" style="padding: 0 5px;">
-                    <a href="berita.html">
-                    <button type="button">Read More ></button>
-                    </a>
+                  <div class="d-grid" style="padding: 0 5px;">
+                    <button type="button">Baca Selengkapnya ></button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row" style="padding-top:80px;">
-            <div class="col-xl-6 col-sm-12 p-2">
-              <div class="img1">
-                <img src="Asset/Images/EVENT 4.jpeg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
-              </div>
+          <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-6 p-2">
+              <img src="Asset/Images/EVENT 4.jpeg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
             </div>
-            <div class="col-xl-6 col-sm-12" >
+            <div class="col-xl-6 col-sm-6" >
               <div class="container" >
-                <div class="text-news wrapper">
-                  <h1>[EVENT] KULIAH UMUM : Computer Vision dan Artificial Intelligence di Era Revolusi Industri 4.0</h1>
-                  <div class="icon-news">
+                <div class="text-event">
+                  <h1>KULIAH UMUM : Computer Vision dan Artificial Intelligence di Era Revolusi Industri 4.0</h1>
+                  <div class="icon-event">
                     <i class="fa-solid fa-calendar-days"></i>
                     <h5>26 Oct 2021</h5>
                     <i class="fa-solid fa-user"></i>
                     <h5>Salhazan Nasution</h5>
                   </div>
                   <p class="text">Computer Vision adalah bidang ilmiah antar disiplin yang membahas bagaimana komputer dapat memperoleh pemahaman tingkat tinggi dari gambar atau video digital. Kecerdasan buatan atau Artificial Intelligence (AI) adalah simulasi dari kecerdasan yang dimiliki oleh manusia yang dimodelkan di dalam mesin dan diprogram agar bisa berpikir seperti halnya manusia. Penasaran sama materinya? Catat tanggalnya yuk: Kamis,...</p>
-                  <div class="bt1 d-grid" style="padding: 0 5px;">
-                    <a href="berita.html">
-                    <button type="button">Read More ></button>
-                    </a>
+                  <div class="d-grid" style="padding: 0 5px;">
+                    <button type="button">Baca Selengkapnya ></button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row" style="padding-top:80px;">
-            <div class="col-xl-6 col-sm-12 p-2">
-              <div class="img1">
-                <img src="Asset/Images/event.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
-              </div>
+          <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-6 p-2">
+              <img src="Asset/Images/EVENT 5.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
             </div>
-            <div class="col-xl-6 col-sm-12" >
+            <div class="col-xl-6 col-sm-6" >
               <div class="container" >
-                <div class="text-news wrapper">
-                  <h1> [EVENT] Orientasi Program FGA DTS 2021</h1>
-                  <div class="icon-news">
+                <div class="text-event">
+                  <h1>Orientasi Program FGA DTS 2021</h1>
+                  <div class="icon-event">
                     <i class="fa-solid fa-calendar-days"></i>
                     <h5>19 Juni 2021</h5>
                     <i class="fa-solid fa-user"></i>
                     <h5>Dian Ramadhani</h5>
                   </div>
                   <p class="text">Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) 2021  Program Studi Teknik Informatika Universitas Riau kembali bekerja sama dengan Kementerian Komunikasi dan Informatika RI menyelenggarakan Program Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) Tahun 2021. Program FGA DTS adalah Program Kominfo dalam pelatihan peningkatan kompetensi bidang TIK yang dapat diikuti oleh Mahasiswa yang baru lulus...</p>
-                  <div class="bt1 d-grid" style="padding: 0 5px;">
-                    <a href="berita.html">
-                    <button type="button">Read More ></button>
-                    </a>
+                  <div class="d-grid" style="padding: 0 5px;">
+                    <button type="button">Baca Selengkapnya ></button>
                   </div>
                 </div>
               </div>
