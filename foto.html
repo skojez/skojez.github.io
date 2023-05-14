@@ -10,7 +10,7 @@
     <title>Foto</title>
     <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <link rel="stylesheet" href="/Style/sfoto.css">
+    <link rel="stylesheet" href="/Style/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
@@ -23,12 +23,84 @@
    .carousel-control-next-icon {
      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
    }
-   @media screen and (max-width: 800px) 
-   {
+   @media screen and (min-width: 801px){
+      .carousel-inner{
+        width: 1000px; 
+        height: 600px; 
+        justify-content: center; 
+        margin-left: auto; 
+        margin-right: auto;
+      }
+      .carousel-inner .carousel-item img{
+        box-shadow: 0px 5px  5px rgba(0, 0, 0, 0.19);
+      }
+      .carousel-inner .carousel-caption{
+        padding-bottom: 80px;
+      }
+      .carousel-inner .carousel-caption h5{
+        font-size: 20px;
+      }
+      .carousel-inner .carousel-caption p{
+        font-size: 10px;
+      }
+      .judul h1{
+        text-align: center;
+        padding-top: 100px;
+        font-weight: bold;
+    }
+      hr{
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        height: 2px;
+        width: 35%;
+      }
+    }
+
+   @media screen and (max-width: 800px) {
      .banyakFoto{
-       margin-top:-40px;
-     }
-   }
+        margin-top:-40px;
+      }
+      .judul h1{
+        text-align: center;
+        padding-top: 100px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      hr{
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        height: 2px;
+        width: 45%;
+      }
+      .carousel-inner{
+        width: 250px; 
+        height: 150px; 
+        justify-content: center; 
+        margin-left: auto; 
+        margin-right: auto;
+      }
+      .carousel-inner .carousel-item img{
+        box-shadow: 0px 5px  5px rgba(0, 0, 0, 0.19);
+      }
+      .carousel-item .carousel-caption{
+        margin-bottom: -30px;
+      }
+      .carousel-item .carousel-caption h5{
+        font-size: 10px;
+        margin-bottom: 2px;
+      }
+      .carousel-item .carousel-caption p{
+        font-size: 5px;
+      }
+    }
 </style>    
 </head>
 

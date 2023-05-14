@@ -15,18 +15,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
     <style>
-      .main-news .img-person img{
-        width: 50%;
-        height: auto;
-        border-radius: 50%;
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
       }
-      .main-news .img-kontak img{
-        width: 30%;
-        height: auto;
+      
+      .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
       }
       @media screen and (max-width: 800px) {
         .main-news{
           margin-top:10px;
+        }
+        .carousel-inner{
+            width: 250px; 
+            height: 150px; 
+            justify-content: center; 
+            margin-left: auto; 
+            margin-right: auto;
+          }
+          .carousel-inner .carousel-item img{
+            box-shadow: 0px 5px  5px rgba(0, 0, 0, 0.19);
+          }
+          .carousel-item .carousel-caption{
+            margin-bottom: -30px;
+          }
+          .carousel-item .carousel-caption h5{
+            font-size: 10px;
+            margin-bottom: 2px;
+          }
+          .carousel-item .carousel-caption p{
+            font-size: 5px;
+          }
+      }
+
+      @media screen and (min-width: 801px) {
+        .main-sertif .img-mikro img{
+          padding-top: 50px;
+          width: 80%;
+          height: auto;
+        }
+        .main-sertif .img-mikro2 img{
+          width: 80%;
+          height: auto;
+        }
+        .main-sertif .text-sertif p{
+          width: auto;
+          text-align: justify;
+          padding-top: 90px;
+        }
+        .carousel-inner{
+          width: 1000px; 
+          height: 600px; 
+          justify-content: center; 
+          margin-left: auto; 
+          margin-right: auto;
+        }
+        .carousel-inner .carousel-item img{
+          box-shadow: 0px 5px  5px rgba(0, 0, 0, 0.19);
+        }
+        .carousel-inner .carousel-caption{
+          padding-bottom: 80px;
+        }
+        .carousel-inner .carousel-caption h5{
+          font-size: 20px;
+        }
+        .carousel-inner .carousel-caption p{
+          font-size: 10px;
+        }
+        .main-kontak .img-person img{
+          width: 30%;
+          height: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 50%;
+          margin-bottom: 100px;
+        }
+        .main-kontak .text-person h1{
+          font-size: 30px;
+          font-weight: bold;
+          padding-top: 50px;
+        }
+        .main-kontak .text-person p{
+          font-size: 20px;
+          text-align: center;
+        }
+        hr{
+          display: block;
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+          margin-left: auto;
+          margin-right: auto;
+          border-style: inset;
+          height: 2px;
+          width: 30%;
+        }
+        .main-kontak .img-kontak img{
+          width: 30%;
+          height: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 50%;
+          margin-bottom: 100px;
+        }
+        .main-kontak .text-kontak h1{
+          font-size: 30px;
+          font-weight: bold;
+          padding-top: 50px;
+        }
+        .main-kontak .text-kontak p{
+          font-size: 20px;
+          text-align: justify;
         }
       }
     </style>
@@ -42,7 +142,7 @@
     <i class="fa-solid fa-circle-arrow-up" ></i>
   </a>
 
-  <section class="berita" style="margin-top: 30px;margin-bottom : 50px;">
+  <section>
     <div class="container-fluid d-flex">
         <div class="bg">
           <h1 style="color: white; text-align: center; padding-top: 200px; font-weight: bold;">Sertifikasi</h1>
@@ -50,38 +150,36 @@
     </div>
   </section>
 
-  <section class="main-news" >
+  <section class="main-sertif" >
     <div class="container">
       <div class="section-divider">
         <span>MIKROTIK ACADEMY</span>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xl-6 col-sm-12 p-2">
+            <div class="col-xl-6 col-sm-12 p-2 border">
               <div class="img-mikro">
                 <img src="Asset/Images/Mikrotik-Academy-UNRI-web.jpg" class="img-fluid" alt="Berita1">
               </div>
             </div>
-            <div class="col-xl-6 col-sm-12">
+            <div class="col-xl-6 col-sm-12 border">
               <div class="container">
-                <div class="text-news2 wrapper">
-                <p style="padding-top:40px">Mikrotik Academy Universitas Riau (UNRI) adalah program kerjasama antara Fakultas Teknik dengan MikroTik untuk dapat menyelenggarakan pendidikan/pelatihan Mikrotik bagi mahasiswa UNRI beserta penyelenggaraan ujian sertifikasi internasional Mikrotik (MTCNA-MikroTik Certified Network Associate). <br>
-                </p>
+                <div class="text-sertif wrapper">
+                <p>Mikrotik Academy Universitas Riau (UNRI) adalah program kerjasama antara Fakultas Teknik dengan MikroTik untuk dapat menyelenggarakan pendidikan/pelatihan Mikrotik bagi mahasiswa UNRI beserta penyelenggaraan ujian sertifikasi internasional Mikrotik (MTCNA-MikroTik Certified Network Associate).</p>
                 </div>
             </div>
           </div>
           
           <div class="row" style="display: flex; flex-wrap: wrap-reverse;">
-            <div class="col-xl-6 col-sm-12">
+            <div class="col-xl-6 col-sm-12 border">
               <div class="container" >
-                <div class="text-news2 wrapper">
-                  <p style="padding-top: 60px;">     Saat ini Mikrotik Academy UNRI memiliki 3 kategori kelas yaitu: <br>
-                
+                <div class="text-sertif wrapper">
+                  <p>Saat ini Mikrotik Academy UNRI memiliki 3 kategori kelas yaitu: <br>
                     1. Kelas Regular: Kelas yang diperuntukkan khusus untuk mahasiswa pordi S1 Teknik Informatika dimana materi mikrotik sudah tergabung dengan kurikulum prodi. <br>
                     2. Kelas Request: Kelas yang diperuntukkan bagi mahasiswa UNRI diluar prodi Teknik Informatika, dengan bentuk pelatihan/ ekstrakurikuler dengan jangka waktu tertentu.</p>
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-sm-12 p-2">
+            <div class="col-xl-6 col-sm-12 p-2 border">
               <div class="img-mikro2">
                 <img src="Asset/Images/MikrotikGambar.jpg" class="img-fluid" alt="Berita1">
               </div>
@@ -92,18 +190,52 @@
     </div>
   </section>
 
-  <section class="main-news">
+  <section>
     <div class="container">
       <div class="section-divider">
         <span>GALERI KEGIATAN MIKROTIK</span>
-        <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide container-fluid py-5" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/Asset/Images/FotoAkreditasi1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block d-md-block">
+              
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/Asset/Images/FotoAkreditasi2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block d-md-block">
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/Asset/Images/FotoAkreditasi3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block d-md-block">
+               
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
           <!-- UNTUK GAMBAR CAROUSEL -->
         </div>
       </div>
     </div>
   </section>
 
-  <section class="main-news">
+  <section class="main-kontak">
     <div class="container">
       <div class="section-divider">
         <span>PERSONIL DAN KONTAK</span>
@@ -116,20 +248,25 @@
             </div>
             <div class="col-xl-6 col-sm-12">
               <div class="container">
-                <div class="text-news">
-                  <div class="judul"><h1>Personil</h1></div>
-                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, accusantium quis? Animi, recusandae modi natus delectus cupiditate dolore placeat nam.</p>
+                <div class="text-person">
+                  <h1>Personil</h1><hr align="center" style="color:black">
+                  <p>Mikrotik Academy telah memiliki Tenaga Pengajar yang tersertifikasi dari mikrotik dan telah berpengalaman dalam bidang networking: <br><br> <strong style="color: #010081;">Linna Oktaviana Sari, ST., MT (MTCNA, MTCRE)</strong></p>
                 </div>
-                
+              </div>  
             </div>
           </div>
           
           <div class="row" style="display: flex; flex-wrap: wrap-reverse;">
             <div class="col-xl-6 col-sm-12">
               <div class="container" >
-                <div class="text-news2 wrapper">
-                  <div class="judul"><h1>Kontak</h1></div>
-                  <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tempora debitis iure neque quod veniam iste, adipisci ab est distinctio?</p>
+                <div class="text-kontak wrapper">
+                  <h1>Kontak</h1><hr align="center" style="color:black">
+                  <p>MIKROTIK ACADEMY FAKULTAS TEKNIK – UNIVERSITAS RIAU <br>
+                    Laboratorium Komputer dan Jaringan- Jurusan Teknik Elektro <br>
+                    Kampus Bina Widya Km 12,5 Simpang Baru <br>
+                    Pekanbaru, Riau, 28293 <br>
+                    Phone/Wa : +628128442849</p>
+                  </div>
                 </div>
               </div>
             </div>

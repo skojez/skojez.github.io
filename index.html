@@ -15,18 +15,314 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
     <style>
+      .contain{
+        margin: 0 auto;
+        max-width: 1400px;
+        width: 100%;
+      }
+      .item{
+        align-items: center;
+        color: white;
+        display: flex;
+        height: auto;
+        justify-content: center;
+      }
+      .main-mitra img{
+        width: auto;
+        height: auto;
+        margin: 40px -20px;
+      }
       .other:hover{
         transform: scale(1.1);
       }
-      .other{
-        padding-top:40px;text-decoration: none; color:black;margin-left: auto;margin-right:auto;display:flex;text-align:center;justify-content: center;
-        width:10%;
-        height:1%;
-      }
-      @media screen and (max-width: 800px) 
-      {
+      @media screen and (min-width: 801px){
+        .text-news .icon-news{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: 5px 0 20px 8px;
+        }
+        .text-news .icon-news h5{
+          font-size: 12px;
+          color: gray;
+          margin-right: 15px;
+        }
+        .text-news{
+          margin-right: 50px;
+          margin-top: 20px;
+        }
+        .text-news h5{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          margin: 2px 5px 10px;
+        }
+        .text-news p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          padding: 0 5px;
+        }
+        .text-news h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 2px 5px;
+        }
+        .main-news .text-news2 h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 50px 5px 0;
+        }
+        .text-news2 .icon-news{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: 5px 0 20px 5px;
+        }
+        .text-news2 .icon-news h5{
+          font-size: 12px;
+          color: gray;
+          margin-right: 15px;
+        }
+        .text-news2{
+          margin-left: 50px;
+          padding-top: 40px;
+        }
+        .text-news2 h5{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          margin: 2px 5px 10px;
+        }
+        .text-news2 p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          padding: 0 5px;
+        }
+        .text-news2 h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 2px 5px;
+        }
+        .main-news .text-news h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 20px 5px 0;
+        }
+        .main-news .img1 img{
+          height: auto;
+          width: 700px;
+          margin-left: 30px;
+        }
+        .main-news button{
+          font-size: 15px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 200px;
+          height: 40px;
+          margin-left: -440px;
+        }
+        .main-news .img2 img{
+          height: auto;
+          width: 700px;
+          margin: 50px 0 0 -30px;
+        }
+        .main-event img{
+          height: auto;
+          width: 250px;
+        }
+        .text-event h1{
+          font-size: 17px;
+          font-weight: bold;
+          text-align: start;
+          margin: 35px 0 25px -50px;
+        }
+        .text-event p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          margin: 30px 0 0 -50px;
+        }
+        .text-event button{
+          font-size: 14px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 180px;
+          height: 35px;
+          margin: 10px 0 0 -55px;
+        }
+        .text-event .icon-event{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: -20px 0 20px -50px;
+        }
+        .text-event .icon-event h5{
+          font-size: 12px;
+          color: gray;
+          margin: 1px 20px 0 5px;
+        }
         .other{
-          width: 30%;
+          font-size: 18px;
+          font-weight: bold;
+          padding: 30px 0 30px 0;
+          text-decoration: none; 
+          color:black;
+          margin-left: auto;
+          margin-right:auto;
+          display:flex;
+          text-align:center;
+          justify-content: center;
+          width:20%;
+          height:1%;
+        }
+      }
+      @media screen and (max-width: 800px){
+        .contain{
+          margin: 0px 0 100px 0 ;
+        }
+        .owl-dots{
+          margin-top:0;
+        }
+        .item img{
+          min-height: 200px;
+          width: 100%;
+          margin-left:-0.2%;
+        }
+        .main-news{
+          margin-top:-100px;
+        }
+        .main-news img{
+          height: auto;
+          width: 700px;
+        }
+        .text-news .icon-news{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: 5px 0 20px 5px;
+        }
+        .text-news .icon-news h5{
+          font-size: 12px;
+          color: gray;
+          margin: 2px 15px 0 5px;
+        }
+        .text-news2 .icon-news{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: 5px 0 20px 5px;
+        }
+        .text-news2 .icon-news h5{
+          font-size: 12px;
+          color: gray;
+          margin: 2px 15px 0 5px;
+        }
+        .main-news .text-news h1{
+          font-size: 20px;
+          font-weight: bold;
+          text-align: start;
+          margin: 10px 5px 0;
+        }
+        .main-news button{
+          font-size: 13px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 170px;
+          height: 35px;
+          margin-left: -140px;
+        }
+        .text-news{
+          margin-left:-10px;
+          padding-bottom: 20px;
+          margin-right: 10px;
+        }
+        .text-news p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          padding: 0 5px;
+        }
+        .main-news .text-news2 h1{
+          font-size: 20px;
+          font-weight: bold;
+          text-align: start;
+          margin: 10px 5px 0;
+        }
+        .text-news2{
+          margin-left:-10px;
+          padding-bottom: 20px;
+          margin-right: 10px;
+        }
+        .text-news2 p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          padding: 0 5px;
+        }
+        .main-event img{
+          height: auto;
+          width: 150px;
+        }
+        .text-event h1{
+          font-size: 10px;
+          font-weight: bold;
+          text-align: start;
+          margin: 25px 0 25px -15px;
+        }
+        .text-event p{
+          width: auto;
+          font-size: 8px;
+          text-align: justify;
+          margin: 15px 0 0 -15px;
+        }
+        .text-event button{
+          color: white;
+          background-color: #010081;
+          border: none;
+          font-size: 7px;
+          width: 95px;
+          height: 20px;
+          margin: 10px 0 0 -20px;
+        }
+        .text-event .icon-event{
+          font-size: 8px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: -20px 0 5px -15px;
+        }
+        .text-event .icon-event h5{
+          font-size: 8px;
+          color: gray;
+          margin: 1px 8px 0 3px;
+        }
+        .other{
+          font-size: 15px;
+          font-weight: bold;
+          padding: -20px 0 20px 0;
+          text-decoration: none; 
+          color:black;
+          margin-left: auto;
+          margin-right:auto;
+          display:flex;
+          text-align:center;
+          justify-content: center;
+          width:42%;
+          height:1%;
         }
       }
     </style>
@@ -113,7 +409,7 @@
                     Ketua Prodi Teknik Informatika,  Dr. Feri Candra turut  mengapresiasi perolehan ini “Capaian ini sangat positif, dari Prodi mendukung berbagai bentuk prestasi Mahasiswa baik dibidang akademis maupun non akademis”.</p>
                   <div class="bt1 d-grid" style="padding: 0 5px;">
                     <a href="berita.html">
-                    <button type="button">Read More ></button>
+                    <button type="button">Baca Selengkapnya ></button>
                     </a>
                   </div>
                 </div>
@@ -137,7 +433,7 @@
                     Dalam orasinya, Prof Azriyenni menyampaikan bahwa kontinuitas penyaluran daya listrik sering dihadapkan pada masalah gangguan yang timbul dalam sistem tenaga listrik. Karena itu, estimasi gangguan pada saluran transmisi tenaga listrik sangat penting untuk mempercepat proses perbaikan. “Perbaikan yang cepat akan mengurangi keluhan pelanggan,” jelasnya. Faktor-faktor tersebut, ungkap Azriyenni, semakin penting bagi perusahaan penyedia energi listrik dalam menghadapi tantangan saat ini. Oleh sebab itu, perlu dikembangkan algoritma untuk estimasi gangguan secara akurat dan cepat.</p>
                   <div class="bt2 d-grid" style="padding: 0 5px;">
                     <a href="berita.html">
-                      <button type="button">Read More ></button>
+                      <button type="button">Baca Selengkapnya ></button>
                       </a>
                   </div>
                 </div>
@@ -168,11 +464,34 @@
             </div>
             <div class="col-6 col-sm-6 col-xl-3">
               <div class="text-event">
-                <h1>Ani Mardhatillah</h1>
-                <h5>12 Oct 2022</h5>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
+                <h1>Orientasi Program FGA DTS 2022</h1>
+                <div class="icon-event">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <h5>13 July 2022</h5>
+                  <i class="fa-solid fa-user"></i>
+                  <h5>Dian Ramadhani</h5>
+                </div>
+                <p class="text">Program Studi Teknik Informatika Universitas Riau kembali bekerja sama dengan Kementerian Komunikasi dan Informatika RI menyelenggarakan Program Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) Tahun 2022. Tahun ini,  pelatihan terselenggara di 57 Perguruan Tinggi baik negeri maupun swasta yang tersebar di seluruh Indonesia.  Universitas Riau (UNRI) merupakan salah satu mitra Kominfo untuk menyelenggarakan pelatihan mulai tahun 2020. Ada 8 kelas yang diselenggarakan.  Universitas Riau berhasil memaksimal rekrutmen peserta dan  menjadi Universitas nomor tiga terbanyak dalam proses rekrutmen peserta diatara kampus mitra kominfo.</p>
                 <div class="d-grid" style="padding: 0 5px;">
-                  <button type="button">Read More ></button>
+                  <button type="button">Baca Selengkapnya ></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-xl-3 p-2">
+              <img src="Asset/Images/EVENT 3.jpg" class="img-fluid" alt="Berita1">
+            </div>
+            <div class="col-6 col-sm-6 col-xl-3">
+              <div class="text-event">
+                <h1>WEBINAR : How to Create a Project/Research Poster</h1>
+                <div class="icon-event">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <h5>15 Juni 2022</h5>
+                  <i class="fa-solid fa-user"></i>
+                  <h5>Dian Ramadhani</h5>
+                </div>
+                <p class="text">Program Studi Teknik Informatika Universitas Riau bekerjasama dengan GDSC-UR (Google Developer Student Clubs Universitas Riau) mengadakan webinar yang merupakan salah satu dari dua rangkaian kegiatan Informatic Poster Days 2022. Informatic Poster Days 2022 sendiri digelar dengan mengadakan webinar dan lomba poster.</p>
+                <div class="d-grid" style="padding: 0 5px;">
+                  <button type="button">Baca Selengkapnya ></button>
                 </div>
               </div>
             </div>
@@ -181,37 +500,34 @@
             </div>
             <div class="col-6 col-sm-6 col-xl-3">
               <div class="text-event">
-                <h1>Ani Mardhatillah</h1>
-                <h5>12 Oct 2022</h5>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
+                <h1>KULIAH UMUM: Data Analytics for Health Sector</h1>
+                <div class="icon-event">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <h5>17 Juni 2022</h5>
+                  <i class="fa-solid fa-user"></i>
+                  <h5>Dian Ramadhani</h5>
+                </div>
+                <p class="text">Jurusan Teknik Elektro Program Studi Teknik Informatika yang bekerjasama dengan GDSC-UR (Google Developer Student Clubs Universitas Riau) mengadakan webinar (kuliah umum) yang merupakan agenda tahunan program studi teknik informatika. Topik kuliah umum ini adalah data analytics yang berkaitan dengan sektor kesehatan, berdasarkan fenomena pandemi covid-19.  Kegiatan ini di mulai dengan kata sambutan oleh Kaprodi Teknik Informatika Universitas Riau oleh Dr. Feri Candra, S.T.,M.T, kata sambutan oleh kepala jurusan Teknik Elektro oleh Anhar, S.T.,M.T.,Ph.D dan dilanjutkan dengan kata sambutan sekaligus pembukaan kegiatan kuliah umum oleh dekan teknik Universitas Riau Prof.Dr. Eng. Azridjal Aziz, , S.T., M.T.</p>
                 <div class="d-grid" style="padding: 0 5px;">
-                  <button type="button">Read More ></button>
+                  <button type="button">Baca Selengkapnya ></button>
                 </div>
               </div>
             </div>
             <div class="col-6 col-sm-6 col-xl-3 p-2">
-              <img src="Asset/Images/EVENT 3.jpg" class="img-fluid" alt="Berita1" style="padding-top: 30px;">
+              <img src="Asset/Images/EVENT 4.jpeg" class="img-fluid" alt="Berita1">
             </div>
             <div class="col-6 col-sm-6 col-xl-3">
-              <div class="text-event" style="padding-top: 30px;">
-                <h1>Ani Mardhatillah</h1>
-                <h5>12 Oct 2022</h5>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
-                <div class="d-grid" style="padding: 0 5px;">
-                  <button type="button">Read More ></button>
+              <div class="text-event">
+                <h1>KULIAH UMUM: Computer Vision dan Artificial Intelligence di Era Revolusi Industri 4.0</h1>
+                <div class="icon-event">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <h5>12 Oct 2022</h5>
+                  <i class="fa-solid fa-user"></i>
+                  <h5>Dian Ramadhani</h5>
                 </div>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 col-xl-3 p-2">
-              <img src="Asset/Images/EVENT 4.jpeg" class="img-fluid" alt="Berita1" style="padding-top: 30px;">
-            </div>
-            <div class="col-6 col-sm-6 col-xl-3">
-              <div class="text-event" style="padding-top: 30px;">
-                <h1>Ani Mardhatillah</h1>
-                <h5>12 Oct 2022</h5>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus consectetur hic quo repudiandae delectus deleniti totam. Numquam earum commodi illo qui explicabo doloribus quas vitae necessitatibus inventore odio ea delectus iure, dignissimos, molestiae saepe tempora cupiditate ratione quisquam </p>
+                <p class="text">Computer Vision adalah bidang ilmiah antar disiplin yang membahas bagaimana komputer dapat memperoleh pemahaman tingkat tinggi dari gambar atau video digital. Kecerdasan buatan atau Artificial Intelligence (AI) adalah simulasi dari kecerdasan yang dimiliki oleh manusia yang dimodelkan di dalam mesin dan diprogram agar bisa berpikir seperti halnya manusia.</p>
                 <div class="d-grid" style="padding: 0 5px;">
-                  <button type="button">Read More ></button>
+                  <button type="button">Baca Selengkapnya ></button>
                 </div>
               </div>
             </div>
@@ -219,7 +535,7 @@
         </div>
       </div>
       <a class="other" href="kategori_event.html" >
-        <p style="border-bottom: 2px solid black">Event Lainnya ></p>
+        <p style="border-bottom: 2px solid black">Kegiatan Lainnya ></p>
       </a>
     </div>
   </section>

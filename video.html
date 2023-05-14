@@ -10,10 +10,67 @@
     <title>Video</title>
     <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <link rel="stylesheet" href="/Style/svideo.css">
+    <link rel="stylesheet" href="/Style/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <style>
+      @media screen and (min-width: 801px){
+        .judul h1{
+          text-align: center;
+          padding-top: 100px;
+          font-weight: bold;
+        }
+        hr{
+          display: block;
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+          margin-left: auto;
+          margin-right: auto;
+          border-style: inset;
+          height: 2px;
+          width: 40%;
+        }
+        .video-profil iframe{
+          width: 80%;
+          height: 500px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+
+    @media screen and (max-width: 800px) {
+      .banyakFoto{
+        margin-top:-40px;
+      }
+      .judul h1{
+        text-align: center;
+        padding-top: 100px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      hr{
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        height: 2px;
+        width: 50%;
+      }
+      .video-profil iframe{
+        width: 85%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    </style>
 </head>
 
 <body class="d-flex flex-column"> 
@@ -56,7 +113,7 @@
 
     <section>
       <div class="judul">
-        <h1>Profil Teknik Informatika Universitas Riau</h1>
+        <h1>Profil Teknik Informatika <br> Universitas Riau</h1>
         <hr align="center" color="black">
       </div>
 
