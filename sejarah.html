@@ -70,6 +70,14 @@
           font-weight: bold;
           margin-top: -20px;
         }
+
+        .card:hover{
+          transform: scale(1.01);
+  
+        }
+        .card img:hover{
+          transform: scale(1.01);
+        }
       }
 
       @media screen and (max-width: 800px) {
@@ -96,6 +104,24 @@
           margin-left: auto;
           margin-right: auto;
           width: 80%;
+        }
+        .card:hover{
+          transform: scale(1.01);
+  
+        }
+        .card img:hover{
+          transform: scale(1.01);
+        }
+        .card img{
+          border-radius: 50%;
+          width: 250px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+        }
+        .kartu-konsen{
+          padding-bottom :30px;
         }
       }
     </style>
@@ -141,8 +167,8 @@
       <div class="container-fluid">
         <div class="row" style="padding-bottom: 30px;">
           <div class="col-lg-4 col-sm-12 d-flex justify-content-center kartu-konsen">
-            <div class="card h-100 w-100">
-              <img src="Asset/Images/KCV.jpeg">
+            <div class="card h-100 w-100" style="background-color: rgb(114, 103, 238); box-shadow: 10px 10px;">
+              <img src="Asset/Images/KCV.jpeg" style="filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));">
               <div class="card-body">
                 <h3 class="card-title">KCV</h3>
                 <h5>(Komputasi Cerdas dan Visualisasi)</h5>
@@ -150,9 +176,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-12 d-flex justify-content-center kartu-konsen">
-            <div class="card h-100 w-100">
-              <img src="Asset/Images/RPL.jpeg">
+          <div class="col-lg-4 col-sm-12 d-flex justify-content-center kartu-konsen " >
+            <div class="card h-100 w-100" style="background-color: rgb(114, 103, 238); box-shadow: 10px 10px;">
+              <img src="Asset/Images/RPL.jpeg" style="filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));">
               <div class="card-body">
                 <h3 class="card-title">RPL</h3>
                 <h5>(Rekayasa Perangkat Lunak)</h5>
@@ -161,8 +187,8 @@
             </div>
           </div>
           <div class="col-lg-4 col-sm-12 d-flex justify-content-center kartu-konsen">
-            <div class="card h-100 w-100">
-              <img src="Asset/Images/KBJ.jpg">
+            <div class="card h-100 w-100" style="background-color: rgb(114, 103, 238); box-shadow: 10px 10px;">
+              <img src="Asset/Images/KBJ.jpg" style="filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));">
               <div class="card-body">
                 <h3 class="card-title">KBJ</h3>
                 <h5>(Komputasi Berbasis Jaringan)</h5>

@@ -14,7 +14,22 @@
     <link rel="stylesheet" href="/Style/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
-
+    <style>
+      .other:hover{
+        transform: scale(1.1);
+      }
+      .other{
+        padding-top:40px;text-decoration: none; color:black;margin-left: auto;margin-right:auto;display:flex;text-align:center;justify-content: center;
+        width:10%;
+        height:1%;
+      }
+      @media screen and (max-width: 800px) 
+      {
+        .other{
+          width: 30%;
+        }
+      }
+    </style>
 </head>
 
 <body class="d-flex flex-column"> 
@@ -136,7 +151,9 @@
           </div>
         </div>
       </div>
-      <a href="kategori_berita.html" class="arrowKegiatan"><i class="fa-solid fa-circle-arrow-down" style="font-size: 40px;"></i></a>
+      <a class="other" href="kategori_berita.html" >
+        <p style="border-bottom: 2px solid black">Berita Lainnya ></p>
+      </a>
     </div>
   </section>
 
@@ -201,7 +218,9 @@
           </div>
         </div>
       </div>
-      <a href="kategori_event.html" class="arrowKegiatan"><i class="fa-solid fa-circle-arrow-down" style="font-size: 40px;"></i></a>
+      <a class="other" href="kategori_event.html" >
+        <p style="border-bottom: 2px solid black">Event Lainnya ></p>
+      </a>
     </div>
   </section>
 
