@@ -10,10 +10,197 @@
     <title>Event</title>
     <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <link rel="stylesheet" href="/Style/styleberita.css">
+    <link rel="stylesheet" href="/Style/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <style>
+      @media screen and (min-width: 801px){
+        .berita img{
+          display: block; 
+          margin-left: auto; 
+          margin-right: auto; 
+          width: 30%;
+        }
+        .text-berita{
+          text-align: justify; 
+          font-size: 17px; 
+          width: 70%;
+          margin-right:auto;
+          margin-left:auto;
+          padding-top: 20px;
+        }
+        .keterangan{
+          display: flex;
+          padding-left: 150px;
+        }
+        .keterangan .icon-kld{
+          font-size: 20px;
+          padding: 100px 0 0 380px;
+          display: flex;
+        }
+        .keterangan .icon-kld h3{
+          font-size: 15px;
+          padding: 2px 0 0 10px;
+        }
+        .keterangan .icon-user{
+          font-size: 20px;
+          padding: 100px 0 0 175px;
+          display: flex;
+        }
+        .keterangan .icon-user h3{
+          font-size: 15px;
+          padding: 2px 0 0 10px;
+        }
+        .main-event{
+          margin-right:50px
+        }
+        .main-event img{
+          height: auto;
+          width: 350px;
+          margin-left: 200px;
+        }
+        .text-event h1{
+          font-size: 35px;
+          font-weight: bold;
+          text-align: start;
+          margin: 60px 0 25px -40px;
+        }
+        .text-event p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          margin: 30px 0 0 -40px;
+        }
+        .text-event button{
+          font-size: 14px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 180px;
+          height: 35px;
+          margin: 10px 0 0 -45px;
+        }
+        .text-event .icon-event{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: -20px 0 20px -40px;
+        }
+        .text-event .icon-event h5{
+          font-size: 12px;
+          color: gray;
+          margin: 1px 20px 0 5px;
+        }
+        .other{
+          font-size: 18px;
+          font-weight: bold;
+          padding: 30px 0 30px 0;
+          text-decoration: none; 
+          color:black;
+          margin-left: auto;
+          margin-right:auto;
+          display:flex;
+          text-align:center;
+          justify-content: center;
+          width:20%;
+          height:1%;
+        }
+      }
+      @media screen and (max-width: 800px){
+        .berita img{
+          display: block; 
+          margin-left: auto; 
+          margin-right: auto; 
+          width: 60%;
+        }
+        .text-berita{
+          text-align: justify; 
+          font-size: 10px; 
+          width: 70%;
+          margin-right:auto;
+          margin-left:auto;
+          padding: 20px 0 50px;
+        }
+        .keterangan{
+          display: flex;
+          /* padding-left: 0px; */
+        }
+        .keterangan .icon-kld{
+          font-size: 10px;
+          padding: 50px 0 0 65px;
+          display: flex;
+        }
+        .keterangan .icon-kld h3{
+          font-size: 8px;
+          padding: 0 0 0 5px;
+        }
+        .keterangan .icon-user{
+          font-size: 10px;
+          padding: 50px 0 0 95px;
+          display: flex;
+        }
+        .keterangan .icon-user h3{
+          font-size: 8px;
+          padding: 0 0 0 5px;
+        }
+        .main-event img{
+          height: auto;
+          width: 150px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .text-event h1{
+          font-size: 10px;
+          font-weight: bold;
+          text-align: start;
+          margin: 5px 0 25px -15px;
+        }
+        .text-event p{
+          width: auto;
+          font-size: 8px;
+          text-align: justify;
+          margin: 15px 0 0 -15px;
+        }
+        .text-event button{
+          color: white;
+          background-color: #010081;
+          border: none;
+          font-size: 7px;
+          width: 95px;
+          height: 20px;
+          margin: 10px 0 0 -20px;
+        }
+        .text-event .icon-event{
+          font-size: 8px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: -20px 0 5px -15px;
+        }
+        .text-event .icon-event h5{
+          font-size: 8px;
+          color: gray;
+          margin: 1px 8px 0 3px;
+        }
+        .other{
+          font-size: 15px;
+          font-weight: bold;
+          padding: -20px 0 20px 0;
+          text-decoration: none; 
+          color:black;
+          margin-left: auto;
+          margin-right:auto;
+          display:flex;
+          text-align:center;
+          justify-content: center;
+          width:42%;
+          height:1%;
+        }
+      }
+    </style>
 </head>
 
 <body class="d-flex flex-column"> 
@@ -53,10 +240,10 @@
     } </script>
 
 
-    <section class="berita" style="margin-top: 30px;">
+    <section>
         <div class="container-fluid d-flex">
             <div class="bg">
-              <h1 style="color: white; text-align: center; padding-top: 200px; font-weight: bold;">[EVENT] KULIAH UMUM : Data Analytics for Health Sector</h1>
+              <h1 style="color: white; text-align: center; padding-top: 200px; font-weight: bold;">KULIAH UMUM :<br>Data Analytics for Health Sector</h1>
            </div>
         </div>
     </section>
@@ -88,55 +275,82 @@
      </div>
     </div>
 
-<section class="main-event">
+<section class="main-event" style="margin-top: 30px; margin-bottom: 70px; ">
   <div class="container">
     <div class="section-divider">
-      <span>KEGIATAN LAINNYA</span>
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-sm-6 col-xl-6 p-2">
-            <img src="Asset/Images/EVENT 1.jpg" class="img-fluid" alt="Berita1">
+      <span>KEGIATAN</span>
+      <div class="container-fluid">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-xl-6 col-sm-6 p-2">
+            <img src="Asset/Images/EVENT 1.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
           </div>
-          <div class="col-6 col-sm-6 col-xl-3">
-            <div class="text-event">
-              <h1>[EVENT] Orientasi Program FGA DTS 2022</h1>
-              <h5>13 Juli 2022</h5>
-              <p class="text">Program Studi Teknik Informatika Universitas Riau kembali bekerja sama dengan Kementerian Komunikasi dan Informatika RI menyelenggarakan Program Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) Tahun 2022. Tahun ini, pelatihan terselenggara di 57 Perguruan Tinggi baik negeri maupun swasta yang tersebar di seluruh Indonesia. Universitas Riau (UNRI) merupakan salah satu mitra Kominfo untuk menyelenggarakan pelatihan mulai tahun 2020. Ada 8 kelas yang diselenggarakan. Universitas Riau berhasil memaksimal rekrutmen peserta dan menjadi Universitas nomor tiga terbanyak dalam proses rekrutmen peserta diatara kampus mitra kominfo.</p>
-              <div class="d-grid" style="padding: 0 5px;">
-                <button type="button" onclick = "window.location.href='event.html';">Read More ></button>
+          <div class="col-xl-6 col-sm-6">
+            <div class="container" >
+              <div class="text-event">
+                <h1>Orientasi Program FGA DTS 2022</h1>
+                <div class="icon-event">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <h5>13 July 2022</h5>
+                  <i class="fa-solid fa-user"></i>
+                  <h5>Dian Ramadhani</h5>
+                </div>
+                <p class="text">Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) 2022  Program Studi Teknik Informatika Universitas Riau kembali bekerja sama dengan Kementerian Komunikasi dan Informatika RI menyelenggarakan Program Fresh Graduate Academy Digital Talent Scholarship (FGA DTS) Tahun 2022. Tahun ini,  pelatihan terselenggara di 57 Perguruan Tinggi baik negeri maupun swasta yang tersebar di seluruh Indonesia.  Universitas Riau (UNRI) merupakan...</p>
+                <div class="d-grid" style="padding: 0 5px;">
+                  <button type="button" onclick = "window.location.href='event.html';">Baca Selengkapnya ></button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-6 col-xl-6 p-2">
-            <img src="Asset/Images/EVENT 2.jpg" class="img-fluid" alt="Berita1">
+        </div>
+        <div class="row" style="padding-top:20px;">
+          <div class="col-xl-6 col-sm-6 p-2">
+            <img src="Asset/Images/EVENT 3.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
           </div>
-          <div class="col-6 col-sm-6 col-xl-3">
-            <div class="text-event">
-              <h1>[EVENT] KULIAH UMUM : Data Analytics for Health Sector</h1>
-              <h5>17 Juni 2022</h5>
-              <p class="text">Jurusan Teknik Elektro Program Studi Teknik Informatika yang bekerjasama dengan GDSC-UR (Google Developer Student Clubs Universitas Riau) mengadakan webinar (kuliah umum) yang merupakan agenda tahunan program studi teknik informatika. Topik kuliah umum ini adalah data analytics yang berkaitan dengan sektor kesehatan, berdasarkan fenomena pandemi covid-19.  Kegiatan ini di mulai dengan kata sambutan oleh Kaprodi Teknik Informatika Universitas Riau oleh Dr. Feri Candra, S.T.,M.T, kata sambutan oleh kepala jurusan Teknik Elektro oleh Anhar, S.T.,M.T.,Ph.D dan dilanjutkan dengan kata sambutan sekaligus pembukaan kegiatan kuliah umum oleh dekan teknik Universitas Riau Prof.Dr. Eng. Azridjal Aziz, , S.T., M.T.</p>
-              <div class="d-grid" style="padding: 0 5px;">
-                <button type="button" onclick = "window.location.href='event copy.html';">Read More ></button>
+          <div class="col-xl-6 col-sm-6" >
+            <div class="container" >
+              <div class="text-event">
+                <h1>WEBINAR : How to Create a Project/Research Poster</h1>
+                <div class="icon-event">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <h5>15 Juni 2022</h5>
+                  <i class="fa-solid fa-user"></i>
+                  <h5>Dian Ramadhani</h5>
+                </div>
+                <p class="text">Program Studi Teknik Informatika Universitas Riau bekerjasama dengan GDSC-UR (Google Developer Student Clubs Universitas Riau) mengadakan webinar yang merupakan salah satu dari dua rangkaian kegiatan Informatic Poster Days 2022. Informatic Poster Days 2022 sendiri digelar dengan mengadakan webinar dan lomba poster. Webinar yang diadakan secara virtual menggunakan Zoom Meeting  pada tanggal 15 Juni 2022 ini...</p>
+                <div class="d-grid" style="padding: 0 5px;">
+                  <button type="button"  onclick = "window.location.href='event copy 2.html';">Baca Selengkapnya ></button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6 col-sm-6 col-xl-6 p-2">
-            <img src="Asset/Images/EVENT 3.jpg" class="img-fluid" alt="Berita1">
-          </div>
-          <div class="col-6 col-sm-6 col-xl-3">
-            <div class="text-event">
-              <h1>[EVENT] WEBINAR : How to Create a Project/Research Poster</h1>
-              <h5>15 Juni 2022</h5>
-              <p class="text">Program Studi Teknik Informatika Universitas Riau bekerjasama dengan GDSC-UR (Google Developer Student Clubs Universitas Riau) mengadakan webinar yang merupakan salah satu dari dua rangkaian kegiatan Informatic Poster Days 2022. Informatic Poster Days 2022 sendiri digelar dengan mengadakan webinar dan lomba poster.</p>
-              <div class="d-grid" style="padding: 0 5px;">
-                <button type="button"  onclick = "window.location.href='event copy 2.html';">Read More ></button>
+          <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-6 p-2">
+              <img src="Asset/Images/EVENT 4.jpeg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
+            </div>
+            <div class="col-xl-6 col-sm-6" >
+              <div class="container" >
+                <div class="text-event">
+                  <h1>KULIAH UMUM : Computer Vision dan Artificial Intelligence di Era Revolusi Industri 4.0</h1>
+                  <div class="icon-event">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h5>26 Oct 2021</h5>
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Salhazan Nasution</h5>
+                  </div>
+                  <p class="text">Computer Vision adalah bidang ilmiah antar disiplin yang membahas bagaimana komputer dapat memperoleh pemahaman tingkat tinggi dari gambar atau video digital. Kecerdasan buatan atau Artificial Intelligence (AI) adalah simulasi dari kecerdasan yang dimiliki oleh manusia yang dimodelkan di dalam mesin dan diprogram agar bisa berpikir seperti halnya manusia. Penasaran sama materinya? Catat tanggalnya yuk: Kamis,...</p>
+                  <div class="d-grid" style="padding: 0 5px;">
+                    <button type="button"  onclick = "window.location.href='event copy 3.html';">Baca Selengkapnya ></button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <a href="kategori_event.html" class="arrowKegiatan"><i class="fa-solid fa-circle-arrow-down" style="font-size: 40px; margin-bottom: 50px;"></i></a>
+    <a class="other" href="kategori_event.html" >
+      <p style="border-bottom: 2px solid black">Kegiatan Lainnya ></p>
+    </a>
   </div>
 </section>
     <!-- Remove the container if you want to extend the Footer to full width. -->

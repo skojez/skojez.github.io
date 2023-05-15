@@ -52,17 +52,6 @@ html,body
     justify-content: center;
 }
 
-
-
-
-.berita img{
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 70%;
-}
-
-
 .footer{
     background-color: #010081;
 }
@@ -512,37 +501,6 @@ button:hover{
     .test3{
         transition: 1s;
     }
-    .keterangan{
-        display: flex;
-        /* padding-left: 0px; */
-    }
-    .keterangan .icon-kld{
-        font-size: 10px;
-        padding: 50px 0 0 55px;
-        display: flex;
-    }
-    .keterangan .icon-kld h3{
-        font-size: 8px;
-        padding: 0 0 0 5px;
-    }
-    
-    .keterangan .icon-user{
-        font-size: 10px;
-        padding: 50px 0 0 115px;
-        display: flex;
-    }
-    .keterangan .icon-user h3{
-        font-size: 8px;
-        padding: 0 0 0 5px;
-    }
-    .text-berita{
-        text-align: justify; 
-        font-size: 10px; 
-        width: 70%;
-        margin-right:auto;
-        margin-left:auto;
-        padding-top: 20px;
-    }
     .section-divider > span {
         color: black;
         font-weight: bold;
@@ -673,36 +631,6 @@ button:hover{
     }
     .test3{
         transition: 1s;
-    }
-    .keterangan{
-        display: flex;
-        padding-left: 150px;
-    }
-    .keterangan .icon-kld{
-        font-size: 20px;
-        padding: 100px 0 0 80px;
-        display: flex;
-    }
-    .keterangan .icon-kld h3{
-        font-size: 15px;
-        padding: 2px 0 0 10px;
-    }
-    .keterangan .icon-user{
-        font-size: 20px;
-        padding: 100px 0 0 770px;
-        display: flex;
-    }
-    .keterangan .icon-user h3{
-        font-size: 15px;
-        padding: 2px 0 0 10px;
-    }
-    .text-berita{
-        text-align: justify; 
-        font-size: 17px; 
-        width: 70%;
-        margin-right:auto;
-        margin-left:auto;
-        padding-top: 20px;
     }
     .section-divider > span {
         color: black;

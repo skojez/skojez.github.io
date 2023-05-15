@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Prestasi Mahasiswa</title>
+    <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/Style/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <style>
+      .contain{
+        margin: 0 auto;
+        max-width: 1400px;
+        width: 100%;
+      }
+      .item{
+        align-items: center;
+        color: white;
+        display: flex;
+        height: auto;
+        justify-content: center;
+      }
+      @media screen and (min-width: 801px){
+        .text-news .icon-news{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: 5px 0 20px 8px;
+        }
+        .text-news .icon-news h5{
+          font-size: 12px;
+          color: gray;
+          margin-right: 15px;
+        }
+        .text-news{
+          margin-right: 50px;
+          margin-top: 20px;
+        }
+        .text-news h5{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          margin: 2px 5px 10px;
+        }
+        .text-news p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          padding: 0 5px;
+        }
+        .text-news h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 2px 5px;
+        }
+        .main-news .text-news2 h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 50px 5px 0;
+        }
+        .main-news .text-news h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: start;
+          margin: 10px 5px 0;
+        }
+        .main-news .img1 img{
+          height: auto;
+          width: 700px;
+          margin-left: 30px;
+        }
+        .main-news button{
+          font-size: 15px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 200px;
+          height: 40px;
+          margin-left: -1px;
+        }
+        .main-news .img2 img{
+          height: auto;
+          width: 700px;
+          margin: 50px 0 0 -30px;
+        }
+      }
+      @media screen and (max-width: 800px){
+        .k-berita{
+          margin-bottom:100px;
+        }
+        .contain{
+          margin: 0px 0 100px 0 ;
+        }
+        .owl-dots{
+          margin-top:0;
+        }
+        .item img{
+          min-height: 200px;
+          width: 100%;
+          margin-left:-0.2%;
+        }
+        .main-news{
+          margin-top:-100px;
+        }
+        .main-news img{
+          height: auto;
+          width: 700px;
+        }
+        .text-news .icon-news{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: 5px 0 20px 5px;
+        }
+        .text-news .icon-news h5{
+          font-size: 12px;
+          color: gray;
+          margin: 2px 15px 0 5px;
+        }
+        .main-news .text-news h1{
+          font-size: 20px;
+          font-weight: bold;
+          text-align: start;
+          margin: 10px 5px 0;
+        }
+        .main-news button{
+          font-size: 13px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 170px;
+          height: 35px;
+          margin-left: 0px;
+        }
+        .text-news{
+          margin-left:-10px;
+          padding-bottom: 20px;
+          margin-right: 10px;
+        }
+        .text-news p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          padding: 0 5px;
+        }
+      }
+    </style>
+</head>
+
+<body class="d-flex flex-column"> 
+  <div id="top"></div>
+  <div id="navigation"></div>
+  
+  <section style="height: 100vh;"></section>
+  
+  <a class ="upIcon" id="myBtn" href="#">
+    <i class="fa-solid fa-circle-arrow-up" ></i>
+  </a>
+
+  <section class="k-berita">
+    <div class="container-fluid d-flex">
+        <div class="bg">
+          <h1 style="font-size: 30px; color: #4141ff; text-align: center; padding-top: 220px; padding-bottom: 10px; font-weight: bold;">PRESTASI MAHASISWA</h1>
+          <h3 style="font-size: 50px; color: white; text-align: center; font-weight: bold;">KATEGORI</h3>
+       </div>
+    </div>
+  </section>
+  
+  <section class="main-news">
+    <div class="container">
+      <!-- <div class="section-divider">
+        <span>BERITA</span> -->
+        <div class="container-fluid">
+          <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-12 p-2">
+              <div class="img1">
+                <img src="Asset/Images/PRESMA-1.jpg" class="img-fluid" alt="Berita1">
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <div class="container" >
+                <div class="text-news wrapper">
+                  <h1>Dzikri Armansyah; Mahasiswa Teknik Informatika UNRI Juara 1 Bujang Dara Kampar</h1>
+                  <div class="icon-news">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h5>02 Juli 2019</h5>
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Salhazan Nasution</h5>
+                  </div>
+                  <p class="text">Dzikri Armansyah, mahasiswa Teknik Informatika UNRI menjadi juara dalam ajang kompetisi Bujang Dara Kabupaten Kampar. Bersama dengan pasangannya Nur Winda yang merupakan Putri asal Kecamatan Bangkinang Kota menjadi Bujang Dara Kabupaten Kampar tahun 2019.</p>
+                  <div class="bt1 d-grid" style="padding: 0 5px;">
+                    <a href="prestasi.html">
+                    <button type="button" onclick = "window.location.href='berita.html';">Baca Selengkapnya ></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-12 p-2">
+              <div class="img1">
+                <img src="Asset/Images/PRESMA-2.jpg" class="img-fluid" alt="Berita1">
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12" >
+              <div class="container" >
+                <div class="text-news wrapper">
+                  <h1>Hakim Ata Attaturk; Mahasiswa Teknik Informatika UNRI Juara 4 Bujang Dara Pekanbaru</h1>
+                  <div class="icon-news">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h5>18 Mei 2019</h5>
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Salhazan Nasution</h5>
+                  </div>
+                  <p class="text">Sebanyak 24 finalis Bujang Dara Pekanbaru 2019 memperebutkan status Bujang Dara Terbaik pada Malam Puncak Pemilihan Bujang Dara yang dilaksanakan di SKA Co Ex, Sabtu 6 April 2019. 24 finalis Bujang Dara Kota Pekanbaru finalis tersebut merupakan putra dan putri terbaik hasil seleksi yang telah dilakukan tim dari Dinas Kebudayaan dan Pariwisata (Disbudpar) Kota Pekanbaru.</p>
+                  <div class="bt1 d-grid" style="padding: 0 5px;">
+                    <a href="prestasi copy.html">
+                    <button type="button" onclick = "window.location.href='berita copy.html';">Baca Selengkapnya ></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-12 p-2">
+              <div class="img1">
+                <img src="Asset/Images/PRESMA-3.jpg" class="img-fluid" alt="Berita1">
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12" >
+              <div class="container" >
+                <div class="text-news wrapper">
+                  <h1>Mahasiswa Teknik Informatika UNRI ikuti Program Magang Mahasiswa Bersertifikat (PMMB) di PTPN V</h1>
+                  <div class="icon-news">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h5>22 Februari 2019</h5>
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Salhazan Nasution</h5>
+                  </div>
+                  <p class="text">Universitas Riau (Unri) kembali mengirimkan mahasiswa untuk mengikuti Program Magang Mahasiswa Bersertifikat (PMMB) ke Perusahaan Badan Usaha Milik Negara (BUMN) yang ada di Indonesia. Kali ini, Perusahaan BUMN yang menjadi tempat lokasi magang adalah PTPN V Sungai Rokan dan Air Molek untuk empat orang Mahasiswa Jurusan Agribisnis Fakultas Pertanian, dan dua Mahasiswa dari Jurusan Teknik Elektro Fakultas Teknik.</p>
+                  <div class="bt1 d-grid" style="padding: 0 5px;">
+                    <a href="prestasi copy 2.html">
+                    <button type="button" onclick = "window.location.href='berita copy 2.html';">Baca Selengkapnya ></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-12 p-2">
+              <div class="img1">
+                <img src="Asset/Images/PRESMA-4.jpg" class="img-fluid" alt="Berita1">
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12" >
+              <div class="container" >
+                <div class="text-news wrapper">
+                  <h1>Abu Hanifah; Mahasiswa Teknik Informatika UNRI Juara 1 Lomba Instruktur Komputer Provinsi Riau dan Harapan 3 Tingkat Nasional</h1>
+                  <div class="icon-news">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h5>19 Oktober 2018</h5>
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Salhazan Nasution</h5>
+                  </div>
+                  <p class="text">Abu Hanifah, mahasiswa Teknik Informatika UNRI menjadi perwakilan Provinsi Riau dalam ajang kegiatan Apresiasi GTK PAUD dan Dikmas Berprestasi Tingkat Nasional Tahun 2018. Sebelumnya Abu Hanifah berhasil mendapatkan Juara 1 Umum pada kategori lomba Instruktur Komputer di tingkat Kabupaten dan Provinsi Riau.</p>
+                  <div class="bt1 d-grid" style="padding: 0 5px;">
+                    <a href="prestasi copy 3.html">
+                    <button type="button" onclick = "window.location.href='berita copy 3.html';">Baca Selengkapnya ></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="padding-top:20px; padding-bottom: 30px;">
+            <div class="col-xl-6 col-sm-12 p-2">
+              <div class="img1">
+                <img src="Asset/Images/PRESMA-5.jpg" class="img-fluid" alt="Berita1">
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12" >
+              <div class="container" >
+                <div class="text-news wrapper">
+                  <h1>Tim FORMATIF Universitas Riau Raih 10 Besar Nasional Web Design Competition di BINUS University</h1>
+                  <div class="icon-news">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h5>11 November 2017</h5>
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Salhazan Nasution</h5>
+                  </div>
+                  <p class="text">Jakarta – Tim FORMATIF UR yang terdiri atas 5 orang mahasiswa Teknik Informatika mewakili Riau dalam ajang Web Design Competition yang diadakan oleh Himpunan Mahasiswa Sistem Informasi (HIMSISFO) Universitas Bina Nusantara pada tanggal 7 – 20 Oktober 2017.</p>
+                  <div class="bt1 d-grid" style="padding: 0 5px;">
+                    <a href="prestasi copy 4.html">
+                    <button type="button">Baca Selengkapnya ></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    } </script>
+
+
+   
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!-- Footer -->
+    <div id = "footer"></div>
+    <!-- Footer -->
+  
+  <!-- End of .container -->
+    <script src="Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Script/script.js"></script>
+</body>
+</html>
