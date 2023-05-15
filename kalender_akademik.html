@@ -14,7 +14,59 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
-</head>
+    <style>
+      @media screen and (min-width: 801px){
+        .isi h1{
+          font-size: 30px;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 90px;
+        }
+        hr{
+          display: block;
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+          margin-left: auto;
+          margin-right: auto;
+          border-style: inset;
+          height: 2px;
+          width: 40%;
+        }
+        .vt{
+          margin: 50px 0 100px;
+        }
+      }
+
+      @media screen and (max-width: 800px){
+        .container h1{
+          text-align: center;
+          padding-top: 100px;
+          font-weight: bold;
+          font-size: 18px;
+          margin-top: -50px;
+        }
+        hr{
+          display: block;
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+          margin-left: auto;
+          margin-right: auto;
+          border-style: inset;
+          height: 2px;
+          width: 90%;
+        }
+        .vt{
+          width: 100%;
+          height: 500px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+    </style>
+  </head>
 
 <body class="d-flex flex-column"> 
   <div id="top"></div>
@@ -29,10 +81,16 @@
   <section class="berita" style="margin-top: 30px;margin-bottom : 50px;">
     <div class="container-fluid d-flex">
         <div class="bg">
-          <h1 style="color: white; text-align: center; padding-top: 200px; font-weight: bold;">Kalender Akademik</h1>
+          <h1 style="color: white; text-align: center; padding-top: 200px; font-weight: bold;">KALENDER AKADEMIK</h1>
        </div>
     </div>
   </section>
+
+  <div>  
+    <h1 style="text-align: center;margin-right:auto;margin-left:auto;font-size:20px">KALENDER AKADEMIK PERKULIAHAN</h1>
+    <hr color="black">
+      <embed src="Asset/pdf/4275-Perubahan-Kalender-Akademik-Tahun-20222-2023-26122022.pdf" type="application/pdf" style="padding-bottom:50px;margin-right:auto;margin-left:auto;height:800px !important;max-width:1000px;width:80%;display:block;padding-top:30px">
+   </div>
 
   <script>
     let mybutton = document.getElementById("myBtn");
