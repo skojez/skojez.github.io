@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Poster</title>
+    <link rel="stylesheet" href="/Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/Style/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
+    <style>
+      @media screen and (min-width: 801px){
+        .berita img{
+          display: block; 
+          margin-left: auto; 
+          margin-right: auto; 
+          width: 30%;
+        }
+        .text-berita{
+          text-align: justify; 
+          font-size: 17px; 
+          width: 70%;
+          margin-right:auto;
+          margin-left:auto;
+          padding-top: 20px;
+        }
+        .text-berita img{
+            width: 90%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .keterangan{
+          display: flex;
+          padding-left: 150px;
+        }
+        .keterangan .icon-kld{
+          font-size: 20px;
+          padding: 100px 0 0 380px;
+          display: flex;
+        }
+        .keterangan .icon-kld h3{
+          font-size: 15px;
+          padding: 2px 0 0 10px;
+        }
+        .keterangan .icon-user{
+          font-size: 20px;
+          padding: 100px 0 0 165px;
+          display: flex;
+        }
+        .keterangan .icon-user h3{
+          font-size: 15px;
+          padding: 2px 0 0 10px;
+        }
+        .main-event{
+          margin-right:50px
+        }
+        .main-event img{
+          height: auto;
+          width: 350px;
+          margin-left: 200px;
+        }
+        .text-event h1{
+          font-size: 35px;
+          font-weight: bold;
+          text-align: start;
+          margin: 60px 0 25px -40px;
+        }
+        .text-event p{
+          width: auto;
+          font-size: 15px;
+          text-align: justify;
+          margin: 30px 0 0 -40px;
+        }
+        .text-event button{
+          font-size: 14px;
+          color: white;
+          background-color: #010081;
+          border: none;
+          width: 180px;
+          height: 35px;
+          margin: 10px 0 0 -45px;
+        }
+        .text-event .icon-event{
+          font-size: 15px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: -20px 0 20px -40px;
+        }
+        .text-event .icon-event h5{
+          font-size: 12px;
+          color: gray;
+          margin: 1px 20px 0 5px;
+        }
+        .other{
+          font-size: 18px;
+          font-weight: bold;
+          padding: 30px 0 30px 0;
+          text-decoration: none; 
+          color:black;
+          margin-left: auto;
+          margin-right:auto;
+          display:flex;
+          text-align:center;
+          justify-content: center;
+          width:20%;
+          height:1%;
+        }
+      }
+      @media screen and (max-width: 800px){
+        .berita img{
+          display: block; 
+          margin-left: auto; 
+          margin-right: auto; 
+          width: 60%;
+        }
+        .text-berita{
+          text-align: justify; 
+          font-size: 10px; 
+          width: 70%;
+          margin-right:auto;
+          margin-left:auto;
+          padding: 20px 0 50px;
+        }
+        .text-berita img{
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .keterangan{
+          display: flex;
+          /* padding-left: 0px; */
+        }
+        .keterangan .icon-kld{
+          font-size: 10px;
+          padding: 50px 0 0 75px;
+          display: flex;
+        }
+        .keterangan .icon-kld h3{
+          font-size: 8px;
+          padding: 0 0 0 5px;
+        }
+        .keterangan .icon-user{
+          font-size: 10px;
+          padding: 50px 0 0 70px;
+          display: flex;
+        }
+        .keterangan .icon-user h3{
+          font-size: 8px;
+          padding: 0 0 0 5px;
+        }
+        .main-event img{
+          height: auto;
+          width: 150px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .text-event h1{
+          font-size: 10px;
+          font-weight: bold;
+          text-align: start;
+          margin: 5px 0 25px -15px;
+        }
+        .text-event p{
+          width: auto;
+          font-size: 8px;
+          text-align: justify;
+          margin: 15px 0 0 -15px;
+        }
+        .text-event button{
+          color: white;
+          background-color: #010081;
+          border: none;
+          font-size: 7px;
+          width: 95px;
+          height: 20px;
+          margin: 10px 0 0 -20px;
+        }
+        .text-event .icon-event{
+          font-size: 8px;
+          color: gray;
+          text-align: start;
+          display: flex;
+          margin: -20px 0 5px -15px;
+        }
+        .text-event .icon-event h5{
+          font-size: 8px;
+          color: gray;
+          margin: 1px 8px 0 3px;
+        }
+        .other{
+          font-size: 15px;
+          font-weight: bold;
+          padding: -20px 0 20px 0;
+          text-decoration: none; 
+          color:black;
+          margin-left: auto;
+          margin-right:auto;
+          display:flex;
+          text-align:center;
+          justify-content: center;
+          width:80%;
+          height:1%;
+        }
+      }
+    </style>
+</head>
+
+<body class="d-flex flex-column"> 
+  <div id="top"></div>
+  <div id ="navigation"></div>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom JS code after importing jquery and owl -->
+    <script type="text/javascript">
+  </script>
+  
+  <a class ="upIcon" id="myBtn" href="#">
+    <i class="fa-solid fa-circle-arrow-up" ></i>
+  </a>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    } </script>
+
+
+    <section>
+        <div class="container-fluid d-flex">
+            <div class="bg">
+              <h1 style="color: white; text-align: center; padding-top: 200px; font-weight: bold;">Poster Skripsi Mahasiswa – Bulan Mei 2023</h1>
+           </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+      <div class="keterangan">
+        <div class="icon-kld">
+          <i class="fa-solid fa-calendar-days"></i>
+          <h3>11 April 2023</h3>
+        </div>
+        <div class="icon-user">
+          <i class="fa-solid fa-user"></i>
+          <h3>Dian Ramadhani</h3>
+        </div>
+      </div>
+      <div class="berita">
+        <img src="Asset/Images/POSTER-1.jpg" style="max-width:600px;max-height:500px; height:100%" alt="Berita1">
+      </div>
+
+      <div class="container-fluid d-flex">
+        <div class="text-berita">
+          <p>Setiap mahasiswa mempunya kewajiban mempublikasi hasil penelitian skripsi dalam bentuk poster. Berikut daftar poster hasil skripsi mahasiswa Program Studi Teknik Informatika, Jurusan Teknik Elektro, Fakultas Teknik, Universitas Riau. <br><br>
+            
+            <strong>1. JUDUL SKRIPSI : Perbandingan Manajemen Bandwidth Metode Hierarchical Token Bucket (HTB) Dan Peer Connection Queue (PCQ) Pada SDS IT Sahabat Muslim Duri</strong></p>
+            <img src="Asset/Images/SKRIPSI.jpg"><br><br>
+            <p><strong>2. JUDUL SKRIPSI : Rancang Bangun Sistem Diagnosa Penyakit Paru-Paru Menggunakan Metode Metode Naive Bayes Berbasis Website</strong></p>
+            <img src="Asset/Images/SKRIPSI2.jpg"><br><br>
+            <p><strong>3. JUDUL SKRIPSI :  Implementasi Deep Learning Untuk Identifikasi Daun Tanaman Obat Menggunakan Metode Transfer Learning</strong></p>
+            <img src="Asset/Images/SKRIPSI3.png"><br><br>
+            <p><strong>4. Judul : Sistem Keamanan Sepeda Motor Menggunakan Teknik Pelacakan Berbasis Internet of Things (IoT) Dengan Komunikasi Long Range (LoRa)</strong></p>
+            <img src="Asset/Images/SKRIPSI4.jpg"><br><br>
+            <p><strong>5. Judul : Analisis Kerentanan dan Keamanan Layanan Cloud Computing dari Serangan Denial of Service (DoS) dengan Menggunakan Metode Intusion Detection System (IDS).</strong></p>
+            <img src="Asset/Images/SKRIPSI5.png">
+        </div>
+     </div>
+    </div>
+
+<section class="main-event" style="margin-top: 30px; margin-bottom: 70px; ">
+  <div class="container">
+    <div class="section-divider">
+      <span>POSTER MAHASISWA</span>
+      <div class="container-fluid">
+        <div class="row" style="padding-top:20px;">
+            <div class="col-xl-6 col-sm-6 p-2">
+              <img src="Asset/Images/POSTER-1.jpg" class="img-fluid" alt="Berita1" style="max-width: 100%;max-height: 400px;">
+            </div>
+            <div class="col-xl-6 col-sm-6" >
+              <div class="container" >
+                <div class="text-event">
+                  <h1>Poster Skripsi Mahasiswa – Bulan April 2023</h1>
+                  <div class="icon-event">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h5>01 April 2021</h5>
+                    <i class="fa-solid fa-user"></i>
+                    <h5>Dian Ramadhani</h5>
+                  </div>
+                  <p class="text">Setiap mahasiswa mempunya kewajiban mempublikasi hasil penelitian skripsi dalam bentuk poster. Berikut daftar poster hasil skripsi mahasiswa Program Studi Teknik Informatika, Jurusan Teknik Elektro, Fakultas Teknik, Universitas Riau. 1. JUDUL SKRIPSI : ANAGEMENT BANDWITH JARINGAN INTERNET MENGGUNAKAN METODE CLASS BASED QUEUEING PADA SMAN 07 MANDAU</p>
+                  <div class="d-grid" style="padding: 0 5px;">
+                    <button type="button"  onclick = "window.location.href='poster copy.html';">Baca Selengkapnya ></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <a class="other" href="kategori_poster.html" >
+      <p style="border-bottom: 2px solid black">Poster Mahasiswa Lainnya ></p>
+    </a>
+  </div>
+</section>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!-- Footer -->
+    <div id = "footer"></div>
+    <!-- Footer -->
+  
+  <!-- End of .container -->
+    <script src="Frontend/bootstrap-5.3.0-alpha1-dist(1)/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Script/script.js"></script>
+</body>
+</html>
