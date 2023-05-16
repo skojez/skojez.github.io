@@ -204,7 +204,7 @@ button:hover{
     float: right;
     position: absolute;
   top: 0px;
-  left: 380px;
+  left: 365px;
   display: flex;
   justify-content: center;
   margin: 20px;
@@ -225,7 +225,7 @@ button:hover{
   transition: all 0.5s 0.2s ease;
 }
 .search-container input[type="text"]:hover{
-    width: 420px;
+    width: 410px;
     transition: all 0.5s 0.2s ease;
   }
 
