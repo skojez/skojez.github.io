@@ -204,7 +204,7 @@ button:hover{
     float: right;
     position: absolute;
   top: 0px;
-  left: 265px;
+  left: 380px;
   display: flex;
   justify-content: center;
   margin: 20px;
@@ -222,10 +222,10 @@ button:hover{
   width: 40px;
   margin-right: -40px;
   display: block;
-
+  transition: all 0.5s 0.2s ease;
 }
 .search-container input[type="text"]:hover{
-    width: 310px;
+    width: 420px;
     transition: all 0.5s 0.2s ease;
   }
 
@@ -528,4 +528,59 @@ button:hover{
         border-bottom: 1px solid white;
         padding-bottom: 10px;
     }
+}
+@media screen and (max-width: 450px) {
+    .search-container {
+        float: right;
+        position: absolute;
+      top: 0px;
+      left: 270px;
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+    
+    .search-container input[type=text] {
+        z-index: 0;
+        top: -5px;
+        height: 55px;
+        position: absolute;
+        right: 0px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 10px 10px 10px 10px;
+      width: 40px;
+      margin-right: -40px;
+      display: block;
+      transition: all 0.5s 0.2s ease;
+    }
+    .search-container input[type="text"]:hover{
+        width: 310px;
+        transition: all 0.5s 0.2s ease;
+      }
+    
+    .search-container button {
+        top: 10px;
+        right: -11px;
+        position: absolute;
+        z-index: 1;
+      border: none;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      border-radius: 0 3px 3px 0;
+      transition: background-color 0.3s ease;
+    }
+    
+    .search-container button:hover {
+      background-color: #ffffff;
+    }
+    
+    
+    
+      .search-container button {
+        width: 100%;
+        border-radius: 3px;
+      }
+    
 }
