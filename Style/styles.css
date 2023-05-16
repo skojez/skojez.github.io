@@ -204,33 +204,39 @@ button:hover{
     float: right;
     position: absolute;
   top: 0px;
-  left: 290px;
+  left: 265px;
   display: flex;
   justify-content: center;
   margin: 20px;
 }
 
 .search-container input[type=text] {
+    z-index: 0;
+    top: -5px;
+    height: 55px;
     position: absolute;
-    right: 90px;
+    right: 0px;
   padding: 10px;
   border: 1px solid black;
-  border-radius: 3px 0 0 3px;
-  width: 120px;
+  border-radius: 10px 10px 10px 10px;
+  width: 40px;
   margin-right: -40px;
   display: block;
-  border-radius: 3px;
+
 }
-.search-container input[type="text"].active{
-    width: 250px;
+.search-container input[type="text"]:hover{
+    width: 310px;
     transition: all 0.5s 0.2s ease;
   }
 
 .search-container button {
+    top: 10px;
+    right: -11px;
+    position: absolute;
+    z-index: 1;
   border: none;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 10px 16px;
   cursor: pointer;
   border-radius: 0 3px 3px 0;
   transition: background-color 0.3s ease;
