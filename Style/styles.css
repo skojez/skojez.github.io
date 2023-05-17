@@ -74,7 +74,7 @@ html,body
     flex: 1;
     height: 6vh;
     white-space: nowrap;
-    transition: 1s;
+
     
 }
 .site-header ul li{
@@ -98,6 +98,11 @@ html,body
 .site-header ul li a{
     width: 18.2%;
 }
+.site-header ul li a:hover{
+    width: 18.2%;
+    color: #010081;
+}
+
 
 .site-header .rusuh{
     width: 0;
@@ -208,6 +213,10 @@ button:hover{
   display: flex;
   justify-content: center;
   margin: 20px;
+}
+
+.site-header ul li a:active{
+    background-color: blue;
 }
 
 .search-container input[type=text] {
@@ -376,15 +385,6 @@ button:hover{
     .show3{
         display: block;
     }
-    .test{
-        transition: 1s;
-    }
-    .test2{
-        transition: 1s;
-    }
-    .test3{
-        transition: 1s;
-    }
     .fa-magnifying-glass{
         display: none;
     }
@@ -508,15 +508,7 @@ button:hover{
     .show3{
         display:block;
     }
-    .test{
-        transition: 1s;
-    }
-    .test2{
-        transition: 1s;
-    }
-    .test3{
-        transition: 1s;
-    }
+    
     .footer h6{
         border-bottom: 3px solid white; 
         padding-bottom: 10px;
