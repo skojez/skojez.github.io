@@ -216,7 +216,7 @@ button:hover{
 }
 
 .site-header ul li a:active{
-    background-color: blue;
+    background-color: green;
 }
 
 .search-container input[type=text] {
@@ -412,7 +412,7 @@ button:hover{
     }
     .site-header ul li a:hover{
         width: 18.2%;
-        color: #000000;
+        color: green;
     }
 }
 
@@ -446,9 +446,9 @@ button:hover{
         position: absolute;
         display: none;
         width: 100%;
-        height: 44vh;
+        height: 42vh;
         border-radius: 10px 10px 10px 10px;
-        padding-top: 21px;
+        padding-top: 23px;
         background-color: #010081;
         font-size: medium;
         text-align: left;
