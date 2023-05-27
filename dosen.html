@@ -27,23 +27,46 @@
         #dosen{
           color: green;
         }
+        .bg-dosen{
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          height: auto;
+          background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(/Asset/Images/bg-dosen.jpg);
+          background-size: cover;
+          align-items: center;
+          justify-content: center;
+        }
+        .bg-dosen img{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 200px;
+          padding-top: 80px;
+        }
         .kartu{
           padding-bottom: 190px;
         }
         .card{
           width: 20rem;
-          background-color: rgb(114, 103, 238); 
+          background-color: #010081; 
           box-shadow: 5px 10px;
           border-radius: 30px;
         }
-          .card img{
+        .card img{
           height:50%;
           width:auto;
           margin-right: auto;
           margin-left:auto;
           border-radius:50%;
           margin-top: -120px; 
-          border: 5px solid #000;
+          border: 5px solid #FFCC00;
+        }
+        .card-body h5{
+          color: #FFCC00;
+        }
+        .card-body p{
+          color: white;
         }
         .card-title{
           font-size: 15px;
@@ -58,18 +81,35 @@
         }
     }
     @media screen and (min-width: 801px){
-       #dropbtn{
-          color: #1616d1;
-        }
-        #dosen{
-          color: green;
-        }
+      #dropbtn{
+        color: #1616d1;
+      }
+      #dosen{
+        color: green;
+      }
+      .bg-dosen{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 500px;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(/Asset/Images/bg-dosen.jpg);
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+      }
+      .bg-dosen img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        padding-top: 80px;
+      }
       .kartu{
         padding-bottom :190px;
       }
       .card{
         width: 20rem;
-        background-color: rgb(114, 103, 238); 
+        background-color: #010081; 
         box-shadow: 5px 10px;
         border-radius: 30px ;
       }
@@ -80,7 +120,13 @@
         margin-left:auto;
         border-radius:50%;
         margin-top: -120px; 
-        border: 5px solid #000;
+        border: 5px solid #FFCC00;
+      }
+      .card-body h5{
+        color: #FFCC00;
+      }
+      .card-body p{
+        color: white;
       }
       .card-title{
         font-size: 15px;
@@ -101,13 +147,14 @@
   <div id="top"></div>
   <div id="navigation"></div>
   
-  <section>
+  <section class="video">
     <div class="container-fluid d-flex">
-        <div class="bg">
-          <h1 style="color: white; text-align: center; padding-top: 250px; font-weight: bold;">DOSEN</h1>
+        <div class="bg-dosen">
+          <img src="Asset/Icon/logo_bw.png">
+          <h1 style="font-size: 50px; letter-spacing: 5px; color: #FFCC00; text-shadow:2px 2px 3px white; text-align: center; padding-top: 50px; font-weight: bold;">DOSEN</h1>
        </div>
     </div>
-  </section>
+</section>
 
   <section style="height: auto;margin-bottom:40px; margin-top:200px">
     <div class="container" style="text-align:center;">
@@ -118,12 +165,12 @@
             <div class="card-body">
               <h5 class="card-title">Dr. Feri Candra, S.T., M.T.</h5>
               <p class="card-text" style="color:whitesmoke";>Koordinator Prodi</p>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Institut Sains Dan Teknologi Nasional <br>
                 S2-Universitas Indonesia <br>
                 S3-Universiti Teknologi Malaysia</p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Machine Learning <br>
                 Computer Vision <br>
                 Robotic <br>
@@ -136,12 +183,12 @@
             <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-dm.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Dr. Dahliyusmanto S.Kom., M.Sc.</h5>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Putra Indonesia <br>
                 S2-Universiti Teknologi Malaysia <br>
                 S3-Universiti Teknologi Malaysia</p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Computer and Network  <br>
                 Security <br>
                 Data Mining <br>
@@ -155,12 +202,12 @@
             <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-it.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Dr. Irsan Taufik Ali, S.T., M.T.</h5>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Islam Indonesia<br>
                 S2-Universitas Gadjah Mada <br>
                 S3-Universitas Indonesia</p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Sistem Informasi<br>
                 Internet of Things<br>
                 Mechine Learning <br>
@@ -174,11 +221,11 @@
             <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-nl.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Noveri Lysbetti Marpaung, S.T., M.Sc.</h5>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Sumatera Utara<br>
                 S2-Newcastle University <br>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Kendali Komputer <br>
                 Wireless Sensor <br>
                 Network <br>
@@ -193,12 +240,12 @@
             <div class="card-body">
               <h5 class="card-title">Rahyul Amri, S.T., M.T.</h5>
               <p class="card-text" style="color:whitesmoke">Kepala Laboratorium Rekayasa Perangkat Lunak</p>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Islam Sumatera Utara<br>
                 S2-Institut Teknologi Sepuluh Nopember <br>
                 </p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Internet of Things<br>
                 Microcontroller<br>
                 Software Engineering <br>
@@ -212,12 +259,12 @@
             <div class="card-body">
               <h5 class="card-title">Linna Oktaviana Sari, S.T., M.T.</h5>
               <p class="card-text" style="color:whitesmoke">Kepala Laboratorium Komputer dan Jaringan</p>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Pancasila <br>
                 S2-Universitas Indonesia<br>
               </p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Jaringan Komunikasi <br>
                 Telekomunikasi<br>
                 Wireless Communication<br>
@@ -230,12 +277,12 @@
             <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-sn.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Salhazan Nasution, S.Kom., MIT.</h5>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Islam Indonesia<br>
                 S2-Universiti Kebangsaan Malaysia<br>
               </p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Information System <br>
                 Software Engineering<br>
                 Usability<br>
@@ -248,12 +295,12 @@
             <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-ty.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">T. Yudi Hadiwandra, S.Kom., M.Kom.</h5>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Gunadarma <br>
                 S2-Universitas Gadjah Mada<br>
                 </p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Artificial Intelligence <br>
                 Computer Vision <br>
                 Data Mining<br>
@@ -266,12 +313,12 @@
             <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-rr.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Rahmat Rizal Andhi, S.T., M.T.</h5>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Pasundan <br>
                 S2-Institut Teknologi Bandung<br>
                 </p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Animation <br>
                 Augmented Reality & Virtual Reality <br>
                 Mobile App & Game Development <br>
@@ -285,12 +332,12 @@
             <div class="card-body">
               <h5 class="card-title">Edi Susilo, S.Pd., M.Kom., M.Eng.</h5>
               <p class="card-text" style="color:whitesmoke">Koordinator Skripsi dan KP</p>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Negeri Yogyakarta<br>
                 S2-Universitas Amikom Yogyakarta<br>
                 S2-Universitas Gadjah Mada</p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Software Engineering<br>
                 Human-Computer Interaction<br>
                 UI/UX<br>
@@ -303,12 +350,12 @@
             <img src="http://informatika.ft.unri.ac.id/wp-content/uploads/pp-dr.jpg" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Dian Ramadhani, S.T., M.T.</h5>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Islam Negeri Sultan Syarif Kasim <br>
                 S2-Institut Teknologi Bandung<br>
                 </p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Data Mining <br>
                 Data Warehouse <br>
                 Business Intelligence<br>
@@ -322,12 +369,12 @@
             <div class="card-body">
               <h5 class="card-title">Dr. Dewi Nasien, S.T., M.Sc.</h5>
               <p class="card-text" style="color:whitesmoke">Dosen Luar Biasa </p>
-              <p> <span style="font-weight: 700;">Pendidikan :</span> <br>
+              <p> <span style="font-weight: 700; color: #FFCC00;">Pendidikan :</span> <br>
                 S1-Universitas Islam Negeri Sultan Syarif Kasim <br>
                 S2-Universiti Teknologi Malaysia <br>
                 S3-Universiti Teknologi Malaysia</p>
               <p>
-                <span style="font-weight: 700;">Bidang Keahlian :</span> <br>
+                <span style="font-weight: 700; color: #FFCC00;">Bidang Keahlian :</span> <br>
                 Machine Learning <br>
                 Pattern recognition <br>
                 Image processing <br>

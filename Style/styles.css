@@ -95,13 +95,20 @@ html,body
     max-width: 100%;
 }
 
-.site-header ul li a{
+/* .site-header ul li a{
     width: 18.2%;
-}
-.site-header ul li a:hover{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 0 80px;
+} */
+/* .site-header ul li a:hover{
     width: 18.2%;
     color: #010081;
-}
+} */
 
 
 .site-header .rusuh{
@@ -206,64 +213,55 @@ button:hover{
 
 @media screen and (max-width: 800px) {
    .search-container {
-    float: right;
-    position: absolute;
-  top: 0px;
-  left: 360px;
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
+        float: right;
+        position: absolute;
+        top: 0px;
+        left: 360px;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    .site-header ul li a:active{
+        background-color: green;
+    }
+    .search-container input[type=text] {
+        z-index: 0;
+        top: -5px;
+        height: 55px;
+        position: absolute;
+        right: 0px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+        width: 40px;
+        margin-right: -40px;
+        display: block;
+        transition: all 0.5s 0.2s ease;
+    }
+    .search-container input[type="text"]:hover{
+        width: 400px;
+        transition: all 0.5s 0.2s ease;
+    }
+    .search-container button {
+        top: 10px;
+        right: -11px;
+        position: absolute;
+        z-index: 1;
+        border: none;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        border-radius: 0 3px 3px 0;
+        transition: background-color 0.3s ease;
+    }
 
-.site-header ul li a:active{
-    background-color: green;
-}
-
-.search-container input[type=text] {
-    z-index: 0;
-    top: -5px;
-    height: 55px;
-    position: absolute;
-    right: 0px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px 10px 10px 10px;
-  width: 40px;
-  margin-right: -40px;
-  display: block;
-  transition: all 0.5s 0.2s ease;
-}
-.search-container input[type="text"]:hover{
-    width: 400px;
-    transition: all 0.5s 0.2s ease;
-  }
-
-.search-container button {
-    top: 10px;
-    right: -11px;
-    position: absolute;
-    z-index: 1;
-  border: none;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  border-radius: 0 3px 3px 0;
-  transition: background-color 0.3s ease;
-}
-
-.search-container button:hover {
-  background-color: #ffffff;
-}
-
-
-
-  .search-container button {
-    width: 100%;
-    border-radius: 3px;
-  }
-
-
- 
+    .search-container button:hover {
+    background-color: #ffffff;
+    }
+    .search-container button {
+        width: 100%;
+        border-radius: 3px;
+    }
     .bg{
         margin-left: auto;
         margin-right: auto;
@@ -273,6 +271,13 @@ button:hover{
         background-size: cover;
         align-items: center;
         justify-content: center;
+    }
+    .bg img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        padding-top: 80px;
     }
     .section-divider > span {
         color: black;
@@ -403,7 +408,7 @@ button:hover{
         width: 50%;
     }
     .footer h6{
-        border-bottom: 3px solid white; 
+        border-bottom: 3px solid #FFCC00; 
         padding-bottom: 10px;
         width: 80%;
         display: block;
@@ -428,6 +433,13 @@ button:hover{
         align-items: center;
         justify-content: center;
     }
+    .bg img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        padding-top: 80px;
+    }
     .section-divider > span {
         color: black;
         font-weight: bold;
@@ -438,6 +450,9 @@ button:hover{
         top: -25px;
         font-size: 30px;
     }
+    .site-header ul li a{
+        width: 18.2%;
+    }
     .site-header ul li a:hover{
         width: 18.2%;
         color: blue;
@@ -445,40 +460,37 @@ button:hover{
     .drop{
         position: absolute;
         display: none;
-        width: 100%;
-        height: 42vh;
-        border-radius: 10px 10px 10px 10px;
-        padding-top: 23px;
+        width: 90%;
+        height: 40vh;
+        padding-top: 14px;
         background-color: #010081;
         font-size: medium;
         text-align: left;
-        top : 35px;
-        left: -32px;
+        top : 39px;
+        left: -36px;
     }
     .drop2{
         position: absolute;
         display: none;
-        width: 100%;
-        height: 15vh;
-        border-radius: 10px 10px 10px 10px;
-        padding-top: 18px;
+        width: 90%;
+        height: 14vh;
+        padding-top: 14px;
         background-color: #010081;
         font-size: medium;
         text-align: left;
-        top : 35px;
+        top : 39px;
         left: -32px;
     }
     .drop3{
         position: absolute;
         display: none;
-        width: 100%;
-        height: 15vh;
-        border-radius: 10px 10px 10px 10px;
-        padding-top: 18px;
+        width: 90%;
+        height: 14vh;
+        padding-top: 14px;
         background-color: #010081;
         font-size: medium;
         text-align: left;
-        top : 35px;
+        top : 39px;
         left: -32px;
     }
     .drop ul li a{
@@ -510,7 +522,7 @@ button:hover{
     }
     
     .footer h6{
-        border-bottom: 3px solid white; 
+        border-bottom: 3px solid #FFCC00; 
         padding-bottom: 10px;
     }
     .footer .kategori, .lt{
