@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
     <style>
+      #judul1{
+        font-size: 50px;
+      }
+      #judul2{
+        font-size: 40px;
+      }
       @media screen and (min-width: 801px) {
         #dropbtn{
           color: #1616d1;
@@ -98,6 +104,12 @@
       }
 
       @media screen and (max-width: 800px) {
+        #judul1{
+          font-size: 30px;
+        }
+        #judul2{
+          font-size: 20px;
+        }
         #dropbtn{
           color: green;
         }
@@ -187,11 +199,11 @@
   <div id="navigation"></div>
   
   <section class="video">
-    <div class="container-fluid d-flex">
+    <div class="container-fluid d-flex"  style="padding-top: 20px;">
         <div class="bg">
-          <img src="Asset/Icon/logo_bw.png">
-          <h1 style="font-size: 50px; letter-spacing: 5px; color: #FFCC00; text-shadow:2px 2px 3px white; text-align: center; padding-top: 20px; font-weight: bold;">SEJARAH</h1>
-          <h1 style="font-size: 40px; color: white; text-align: center; padding-top: 10px; text-shadow:2px 2px 3px #FFCC00; font-weight: bold;">Program Studi Teknik Informatika</h1>
+          <img src="Asset/Icon/logo_bw.png" >
+          <h1 id="judul1" style="letter-spacing: 5px; color: #FFCC00; text-shadow:2px 2px 3px white; text-align: center; padding-top: 20px; font-weight: bold;">SEJARAH</h1>
+          <h1 id="judul2" style="color: white; text-align: center; padding-top: 10px; text-shadow:2px 2px 3px #FFCC00; font-weight: bold;padding-bottom:50px">Program Studi Teknik Informatika</h1>
        </div>
     </div>
 </section>
