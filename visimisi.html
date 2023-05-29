@@ -24,7 +24,7 @@
           color: #1616d1;
         }
         #visimisi{
-          color: green;
+          color: #FFCC00;
         }
         .judul h1{
           font-size: 30px;
@@ -50,6 +50,11 @@
           margin-left:auto;
           padding-top: 20px;
         }
+        .section-divider span{
+          font-weight:700;
+          color: #010081;
+          margin-left: -600px;
+        }
       }
 
       @media screen and (max-width: 800px){
@@ -60,10 +65,10 @@
           font-size: 20px;
         }
         #dropbtn{
-          color: green;
+          color: #FFCC00;
         }
         #visimisi{
-          color: green;
+          color: #FFCC00;
         }
         .judul h1{
           text-align: center;
@@ -94,6 +99,11 @@
           padding-left: 0;
           margin-left: -7px;
         }
+        .section-divider span{
+          font-weight:700;
+          color: #010081;
+          margin-left: -150px;
+        }
       }
     </style>
 </head>
@@ -113,12 +123,15 @@
   </section>
 
 <section>
-  <div class="container-fluid d-flex" style="padding-bottom: 90px; padding-top: 90px;">
+  <div class="container-fluid d-flex">
     <div class="text-sejarah">
-      <p> <span style="font-weight:700;">Visi:</span>  <br>
-        Menjadi Program Studi Teknik Informatika Terkemuka Berbasis Riset dan Teknologi yang Bermartabat di Kawasan Asia Tenggara pada Tahun 2035.</p>
-        <p style="position: relative;"> <span style="font-weight:700;">Misi:</span>  <br>
-          <ol style="padding-left: 16px;">
+      <div class="section-divider">
+        <span>Visi</span>
+        <p style="text-align: justify;"> Program Studi Teknik Informatika Terkemuka Berbasis Riset dan Teknologi yang Bermartabat di Kawasan Asia Tenggara pada Tahun 2035.</p>
+      </div>
+      <div class="section-divider">
+        <span>Misi</span>
+          <p><ol style="padding-left: 16px; position: relative; text-align: justify;">
             <li>
               Menyelenggarakan pendidikan Sarjana dalam bidang ilmu Teknik Informatika, berbasis penelitian dan pengembangan untuk menghasilkan lulusan unggul, profesional dan kompetitif berlandaskan ketaqwaan kepada Tuhan Yang Maha Esa.
             </li>
@@ -135,7 +148,8 @@
               Mengembangkan kerjasama yang luas dengan lembaga pendidikan tinggi, instansi pemerintahan dan lembaga lain dalam dan luar negeri.
             </li>
           </ol>
-         </p>
+        </p>
+      </div>
     </div>
  </div>
 </section>

@@ -29,7 +29,7 @@
       color: #1616d1;
     }
     #foto{
-      color: green;
+      color: #FFCC00;
     }
       .carousel-inner{
         width: 1000px; 
@@ -50,62 +50,35 @@
       .carousel-inner .carousel-caption p{
         font-size: 10px;
       }
-      .judul h1{
-        text-align: center;
-        padding-top: 100px;
-        font-weight: bold;
+      .section-divider{
+        margin-top: 100px;
+        margin-bottom: -50px;
       }
-      .judul2 h1{
-        text-align: center;
-        padding-top: 100px;
-        font-weight: bold;
-      }
-      hr{
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 0.5em;
-        margin-left: auto;
-        margin-right: auto;
-        border-style: inset;
-        height: 2px;
-        width: 35%;
+      .section-divider span{
+        font-weight:700;
+        color: #010081;
+        margin-left: -1100px;
       }
     }
 
    @media screen and (max-width: 800px) {
     #droptombol{
-      color: green;
+      color: #FFCC00;
     }
     #foto{
-      color: green;
+      color: #FFCC00;
     }
      .banyakFoto{
         margin-top:-40px;
       }
-      .judul h1{
-        text-align: center;
-        padding-top: 100px;
-        font-weight: bold;
-        font-size: 15px;
+      .section-divider{
+        margin-top: 100px;
         margin-bottom: -50px;
       }
-      .judul2 h1{
-        text-align: center;
-        padding-top: 100px;
-        font-weight: bold;
-        font-size: 15px;
-        margin-top: -100px;
-        margin-bottom: -50px;
-      }
-      hr{
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 0.5em;
-        margin-left: auto;
-        margin-right: auto;
-        border-style: inset;
-        height: 2px;
-        width: 45%;
+      .section-divider span{
+        font-weight:700;
+        color: #010081;
+        margin-left: -150px;
       }
       .carousel-inner{
         width: 250px; 
@@ -163,91 +136,97 @@
 
     <section class="foto">
         <div class="container-fluid d-flex" style="padding-top: 20px;">
-            <div class="bg">
-              <h1 style="font-size: 50px; color: white; text-align: center; padding-top: 250px; font-weight: bold;margin-bottom: 200px;">FOTO</h1>
-           </div>
+          <div class="bg">
+            <img src="Asset/Icon/logo_bw.png" style="margin-top: -20px;">
+            <h1 id="judul1"style=" letter-spacing: 5px; color: #FFCC00; text-shadow:2px 2px 3px white; text-align: center; padding-top: 20px; font-weight: bold;">FOTO</h1>
+         </div>
         </div>
     </section>
 
     <section class="banyakFoto">
-      <div class="judul">
-        <h1>Kegiatan Akreditasi</h1>
-        <hr align="center" style="color:black">
-      </div>
-      <div id="carouselExampleCaptions" class="carousel slide container-fluid py-5" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/Asset/Images/FotoAkreditasi1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-            
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/Asset/Images/FotoAkreditasi2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-             
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/Asset/Images/FotoAkreditasi3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-             
-            </div>
+      <div class="container-fluid">
+        <div class="judul">
+          <div class="section-divider">
+            <span>Kegiatan Akreditasi</span>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="judul2" style="margin-top:-50px">
-        <h1>Kegiatan Mikrotik</h1>
-        <hr align="center" style="color:black">
-      </div>
-      <div id="carouselExampleCaptions2" class="carousel slide container-fluid py-5" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carouselExampleCaptions" class="carousel slide container-fluid py-5" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/Asset/Images/FotoAkreditasi1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block d-md-block">
+              
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/Asset/Images/FotoAkreditasi2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block d-md-block">
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/Asset/Images/FotoAkreditasi3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block d-md-block">
+               
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/Asset/Images/GaleriMikrotik1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-            
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/Asset/Images/GaleriMikrotik2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-             
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/Asset/Images/GaleriMikrotik3.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-             
-            </div>
+        <div class="judul2" style="margin-top:-50px">
+          <div class="section-divider">
+            <span>Kegiatan Mikrotik</span>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div id="carouselExampleCaptions2" class="carousel slide container-fluid py-5" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/Asset/Images/GaleriMikrotik1.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block d-md-block">
+              
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/Asset/Images/GaleriMikrotik2.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block d-md-block">
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/Asset/Images/GaleriMikrotik3.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-block d-md-block">
+               
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
+      
     </section>
    
     <!-- Remove the container if you want to extend the Footer to full width. -->

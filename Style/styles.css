@@ -72,7 +72,7 @@ html,body
 }
   
 .section-divider {
-    border-top: 2px solid black;
+    border-top: 5px solid #FFCC00;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 40px;
@@ -293,7 +293,7 @@ button:hover{
         margin: 20px;
     }
     .site-header ul li a:active{
-        background-color: green;
+        background-color: #FFCC00;
     }
     .search-container input[type=text] {
         z-index: 0;
@@ -339,6 +339,8 @@ button:hover{
         width: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(/Asset/Images/bg-judul.jpg);
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         align-items: center;
         justify-content: center;
     }
@@ -487,7 +489,7 @@ button:hover{
     }
     .site-header ul li a:hover{
         width: 18.2%;
-        color: green;
+        color: #FFCC00;
     }
 }
 
@@ -531,7 +533,7 @@ button:hover{
         position: absolute;
         display: none;
         width: 90%;
-        height: 43vh;
+        height: 40vh;
         padding-top: 14px;
         background-color: #010081;
         font-size: medium;
